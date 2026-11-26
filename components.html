@@ -13,72 +13,72 @@
     .catalog-shell { min-height: 100vh; }
     .catalog-header {
       position: sticky; top: 0; z-index: 1000; display: flex; align-items: center;
-      min-height: 64px; padding: 8px clamp(16px, 3vw, 48px); border-bottom: 1px solid var(--cds-border-subtle-01);
-      background: color-mix(in srgb, var(--cds-background) 92%, transparent); backdrop-filter: blur(12px);
+      min-height: 64px; padding: 8px clamp(16px, 3vw, 48px); border-bottom: 1px solid var(--mds-border-subtle-01);
+      background: color-mix(in srgb, var(--mds-background) 92%, transparent); backdrop-filter: blur(12px);
     }
     .catalog-brand { min-width: 220px; }
     .catalog-brand strong { display: block; font-family: var(--kt-font-display); font-size: 18px; line-height: 1.3; }
-    .catalog-brand span, .catalog-kicker, .catalog-meta { color: var(--cds-text-secondary); font-size: 12px; line-height: 1.4; }
+    .catalog-brand span, .catalog-kicker, .catalog-meta { color: var(--mds-text-secondary); font-size: 12px; line-height: 1.4; }
     .catalog-controls { display: flex; flex: 1; justify-content: flex-end; gap: 12px; align-items: center; }
     .catalog-search { position: relative; width: min(360px, 45vw); }
-    .catalog-search input { width: 100%; height: 40px; padding: 0 40px 0 14px; border: 0; border-bottom: 1px solid var(--cds-border-strong-01); background: var(--cds-field-01); color: var(--cds-text-primary); font-size: 14px; }
+    .catalog-search input { width: 100%; height: 40px; padding: 0 40px 0 14px; border: 0; border-bottom: 1px solid var(--mds-border-strong-01); background: var(--mds-field-01); color: var(--mds-text-primary); font-size: 14px; }
     .catalog-search img { position: absolute; top: 12px; right: 12px; width: 16px; height: 16px; }
-    .catalog-theme { height: 40px; padding: 0 36px 0 12px; border: 1px solid var(--cds-border-subtle-01); background: var(--cds-field-01); color: var(--cds-text-primary); font-size: 14px; }
+    .catalog-theme { height: 40px; padding: 0 36px 0 12px; border: 1px solid var(--mds-border-subtle-01); background: var(--mds-field-01); color: var(--mds-text-primary); font-size: 14px; }
     .catalog-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); }
-    .catalog-nav { position: sticky; top: 65px; height: calc(100vh - 65px); overflow: auto; padding: 24px 16px 40px 24px; border-right: 1px solid var(--cds-border-subtle-01); }
-    .catalog-nav-title { margin-bottom: 12px; color: var(--cds-text-secondary); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
-    .catalog-nav a { display: block; padding: 7px 10px; border-left: 2px solid transparent; color: var(--cds-text-secondary); font-size: 13px; line-height: 1.35; text-decoration: none; }
-    .catalog-nav a:hover, .catalog-nav a:focus-visible { border-left-color: var(--cds-border-interactive); background: var(--cds-background-hover); color: var(--cds-text-primary); }
+    .catalog-nav { position: sticky; top: 65px; height: calc(100vh - 65px); overflow: auto; padding: 24px 16px 40px 24px; border-right: 1px solid var(--mds-border-subtle-01); }
+    .catalog-nav-title { margin-bottom: 12px; color: var(--mds-text-secondary); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+    .catalog-nav a { display: block; padding: 7px 10px; border-left: 2px solid transparent; color: var(--mds-text-secondary); font-size: 13px; line-height: 1.35; text-decoration: none; }
+    .catalog-nav a:hover, .catalog-nav a:focus-visible { border-left-color: var(--mds-border-interactive); background: var(--mds-background-hover); color: var(--mds-text-primary); }
     .catalog-main { width: 100%; max-width: 1440px; padding: clamp(32px, 5vw, 72px) clamp(16px, 4vw, 64px) 96px; }
-    .catalog-hero { display: grid; grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr); gap: 32px; padding-bottom: 56px; border-bottom: 1px solid var(--cds-border-subtle-01); }
+    .catalog-hero { display: grid; grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr); gap: 32px; padding-bottom: 56px; border-bottom: 1px solid var(--mds-border-subtle-01); }
     .catalog-kicker { margin-bottom: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
     .catalog-hero h1 { max-width: 760px; font-size: clamp(36px, 6vw, 72px); line-height: 1.05; }
-    .catalog-lead { max-width: 720px; margin-top: 24px; color: var(--cds-text-secondary); font-size: 16px; line-height: 1.65; }
-    .catalog-summary { align-self: end; padding: 24px; background: var(--cds-layer-01); }
+    .catalog-lead { max-width: 720px; margin-top: 24px; color: var(--mds-text-secondary); font-size: 16px; line-height: 1.65; }
+    .catalog-summary { align-self: end; padding: 24px; background: var(--mds-layer-01); }
     .catalog-summary strong { display: block; margin-bottom: 4px; font-family: var(--kt-font-display); font-size: 40px; font-weight: 400; }
     .catalog-group { padding-top: 64px; }
-    .catalog-group-header { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--cds-border-strong-01); }
+    .catalog-group-header { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--mds-border-strong-01); }
     .catalog-group-header h2 { font-size: clamp(26px, 3vw, 38px); }
-    .catalog-group-header p { max-width: 520px; color: var(--cds-text-secondary); font-size: 14px; line-height: 1.5; }
+    .catalog-group-header p { max-width: 520px; color: var(--mds-text-secondary); font-size: 14px; line-height: 1.5; }
     .catalog-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-    .catalog-demo { min-width: 0; padding: 24px; border: 1px solid var(--cds-border-subtle-01); background: var(--cds-layer-01); }
+    .catalog-demo { min-width: 0; padding: 24px; border: 1px solid var(--mds-border-subtle-01); background: var(--mds-layer-01); }
     .catalog-demo--wide { grid-column: 1 / -1; }
     .catalog-demo[hidden], .catalog-group[hidden] { display: none; }
     .catalog-demo-header { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
     .catalog-demo-header h3 { font-family: var(--kt-font-body); font-size: 16px; font-weight: 600; }
-    .catalog-class { color: var(--cds-text-secondary); font-family: var(--kt-font-mono); font-size: 11px; line-height: 1.4; text-align: right; }
+    .catalog-class { color: var(--mds-text-secondary); font-family: var(--kt-font-mono); font-size: 11px; line-height: 1.4; text-align: right; }
     .catalog-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
     .catalog-stack { display: grid; gap: 16px; }
     .catalog-field-grid { display: grid; grid-template-columns: repeat(2, minmax(180px, 1fr)); gap: 20px; }
-    .catalog-subtitle { margin: 8px 0 12px; color: var(--cds-text-secondary); font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
-    .catalog-note { margin-top: 16px; color: var(--cds-text-secondary); font-size: 12px; line-height: 1.5; }
+    .catalog-subtitle { margin: 8px 0 12px; color: var(--mds-text-secondary); font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+    .catalog-note { margin-top: 16px; color: var(--mds-text-secondary); font-size: 12px; line-height: 1.5; }
     .catalog-icon { width: 16px; height: 16px; }
     .catalog-icon--20 { width: 20px; height: 20px; }
     .catalog-icon--32 { width: 32px; height: 32px; }
-    .catalog-surface { padding: 20px; border: 1px dashed var(--cds-border-strong-01); background: var(--cds-background); }
-    .catalog-overlay-preview { position: relative; min-height: 280px; overflow: hidden; background: color-mix(in srgb, var(--cds-background-inverse) 18%, var(--cds-background)); }
-    .catalog-dialog-card { width: min(92%, 520px); margin: 28px auto; background: var(--cds-layer-01); box-shadow: 0 12px 32px rgba(0,0,0,.22); }
+    .catalog-surface { padding: 20px; border: 1px dashed var(--mds-border-strong-01); background: var(--mds-background); }
+    .catalog-overlay-preview { position: relative; min-height: 280px; overflow: hidden; background: color-mix(in srgb, var(--mds-background-inverse) 18%, var(--mds-background)); }
+    .catalog-dialog-card { width: min(92%, 520px); margin: 28px auto; background: var(--mds-layer-01); box-shadow: 0 12px 32px rgba(0,0,0,.22); }
     .catalog-dialog-card header, .catalog-dialog-card .catalog-dialog-body { padding: 20px 24px; }
-    .catalog-dialog-card footer { display: flex; justify-content: flex-end; gap: 1px; background: var(--cds-border-subtle-01); }
-    .catalog-panel-preview { display: grid; grid-template-columns: 1fr minmax(260px, 38%); min-height: 300px; overflow: hidden; border: 1px solid var(--cds-border-subtle-01); background: var(--cds-background); }
-    .catalog-panel-canvas { display: grid; place-items: center; color: var(--cds-text-secondary); }
-    .catalog-panel { padding: 24px; border-left: 1px solid var(--cds-border-subtle-01); background: var(--cds-layer-01); }
+    .catalog-dialog-card footer { display: flex; justify-content: flex-end; gap: 1px; background: var(--mds-border-subtle-01); }
+    .catalog-panel-preview { display: grid; grid-template-columns: 1fr minmax(260px, 38%); min-height: 300px; overflow: hidden; border: 1px solid var(--mds-border-subtle-01); background: var(--mds-background); }
+    .catalog-panel-canvas { display: grid; place-items: center; color: var(--mds-text-secondary); }
+    .catalog-panel { padding: 24px; border-left: 1px solid var(--mds-border-subtle-01); background: var(--mds-layer-01); }
     .catalog-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-    .catalog-card { min-height: 180px; padding: 20px; border-top: 3px solid var(--cds-border-interactive); background: var(--cds-background); }
-    .catalog-card p { margin-top: 36px; color: var(--cds-text-secondary); font-size: 14px; line-height: 1.5; }
+    .catalog-card { min-height: 180px; padding: 20px; border-top: 3px solid var(--mds-border-interactive); background: var(--mds-background); }
+    .catalog-card p { margin-top: 36px; color: var(--mds-text-secondary); font-size: 14px; line-height: 1.5; }
     .catalog-color-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
-    .catalog-swatch { min-height: 96px; padding: 12px; border: 1px solid var(--cds-border-subtle-01); font-size: 12px; }
+    .catalog-swatch { min-height: 96px; padding: 12px; border: 1px solid var(--mds-border-subtle-01); font-size: 12px; }
     .catalog-swatch::before { display: block; width: 28px; height: 28px; margin-bottom: 12px; border-radius: 50%; background: var(--swatch); content: ""; }
-    .catalog-empty { display: none; padding: 80px 16px; color: var(--cds-text-secondary); text-align: center; }
+    .catalog-empty { display: none; padding: 80px 16px; color: var(--mds-text-secondary); text-align: center; }
     .catalog-hidden-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
     .catalog-table-wrap { overflow-x: auto; }
-    .catalog-demo .cds--inline-notification { max-width: none; }
-    .catalog-demo .cds--toast-notification { margin: 0; }
-    .catalog-demo .cds--loading-overlay { position: relative; z-index: auto; height: 96px; background: transparent; }
-    .catalog-demo .cds--popover { position: relative; display: inline-block; inset: auto; }
-    .catalog-demo .cds--popover-content { position: relative; inset: auto; }
-    .catalog-demo .cds--menu { position: relative; inset: auto; }
-    .catalog-demo .cds--tooltip { position: relative; inset: auto; display: block; opacity: 1; visibility: visible; }
+    .catalog-demo .mds--inline-notification { max-width: none; }
+    .catalog-demo .mds--toast-notification { margin: 0; }
+    .catalog-demo .mds--loading-overlay { position: relative; z-index: auto; height: 96px; background: transparent; }
+    .catalog-demo .mds--popover { position: relative; display: inline-block; inset: auto; }
+    .catalog-demo .mds--popover-content { position: relative; inset: auto; }
+    .catalog-demo .mds--menu { position: relative; inset: auto; }
+    .catalog-demo .mds--tooltip { position: relative; inset: auto; display: block; opacity: 1; visibility: visible; }
     @media (max-width: 920px) {
       .catalog-layout { grid-template-columns: 1fr; }
       .catalog-nav { display: none; }
@@ -97,7 +97,7 @@
       .catalog-group-header p { margin-top: 8px; }
       .catalog-panel-preview { grid-template-columns: 1fr; }
       .catalog-panel-canvas { min-height: 100px; }
-      .catalog-panel { border-top: 1px solid var(--cds-border-subtle-01); border-left: 0; }
+      .catalog-panel { border-top: 1px solid var(--mds-border-subtle-01); border-left: 0; }
     }
   </style>
 </head>
@@ -148,12 +148,12 @@
                 <div class="catalog-stack"><h1>見出し Heading 01</h1><h2>見出し Heading 02</h2><h3>見出し Heading 03</h3><h4>見出し Heading 04</h4><p style="font-size:16px;line-height:1.6">本文テキスト。視認性と日本語の読みやすさを確認します。Design begins with clear language.</p><p><strong>Strong text</strong> / <em>Emphasis</em> / <code>const token = "value";</code></p></div>
               </article>
               <article class="catalog-demo" data-name="Color カラー token theme palette">
-                <div class="catalog-demo-header"><h3>Color tokens</h3><code class="catalog-class">--cds-* / --kt-*</code></div>
-                <div class="catalog-color-grid"><div class="catalog-swatch" style="--swatch:var(--cds-background)">Background</div><div class="catalog-swatch" style="--swatch:var(--cds-layer-01)">Layer 01</div><div class="catalog-swatch" style="--swatch:var(--cds-interactive)">Interactive</div><div class="catalog-swatch" style="--swatch:var(--cds-support-success)">Success</div></div>
+                <div class="catalog-demo-header"><h3>Color tokens</h3><code class="catalog-class">--mds-* / --kt-*</code></div>
+                <div class="catalog-color-grid"><div class="catalog-swatch" style="--swatch:var(--mds-background)">Background</div><div class="catalog-swatch" style="--swatch:var(--mds-layer-01)">Layer 01</div><div class="catalog-swatch" style="--swatch:var(--mds-interactive)">Interactive</div><div class="catalog-swatch" style="--swatch:var(--mds-support-success)">Success</div></div>
               </article>
               <article class="catalog-demo" data-name="Grid グリッド layout layer aspect ratio stack">
-                <div class="catalog-demo-header"><h3>Grid &amp; layout</h3><code class="catalog-class">.cds--css-grid / .cds--layer</code></div>
-                <div class="cds--css-grid" style="padding:0"><div class="cds--css-grid-column cds--col-span-4 catalog-surface">4 cols</div><div class="cds--css-grid-column cds--col-span-4 catalog-surface">4 cols</div><div class="cds--css-grid-column cds--col-span-4 catalog-surface">4 cols</div><div class="cds--css-grid-column cds--col-span-4 catalog-surface">4 cols</div></div>
+                <div class="catalog-demo-header"><h3>Grid &amp; layout</h3><code class="catalog-class">.mds--css-grid / .mds--layer</code></div>
+                <div class="mds--css-grid" style="padding:0"><div class="mds--css-grid-column mds--col-span-4 catalog-surface">4 cols</div><div class="mds--css-grid-column mds--col-span-4 catalog-surface">4 cols</div><div class="mds--css-grid-column mds--col-span-4 catalog-surface">4 cols</div><div class="mds--css-grid-column mds--col-span-4 catalog-surface">4 cols</div></div>
               </article>
             </div>
           </section>
@@ -161,18 +161,36 @@
           <section class="catalog-group" id="actions" data-title="Actions / 操作">
             <div class="catalog-group-header"><h2>Actions</h2><p>ユーザーが操作を起こすためのボタン、リンク、メニュー、コピー操作です。</p></div>
             <div class="catalog-grid">
-              <article class="catalog-demo catalog-demo--wide" data-name="Button ボタン primary secondary tertiary ghost danger icon chat">
-                <div class="catalog-demo-header"><h3>Button</h3><code class="catalog-class">.cds--btn</code></div>
-                <div class="catalog-row"><button class="cds--btn cds--btn--primary">Primary <img class="catalog-icon" src="./svg/16/arrow--right.svg" alt=""></button><button class="cds--btn cds--btn--secondary">Secondary</button><button class="cds--btn cds--btn--tertiary">Tertiary</button><button class="cds--btn cds--btn--ghost">Ghost</button><button class="cds--btn cds--btn--danger">Danger</button><button class="cds--btn cds--btn--primary" disabled>Disabled</button><button class="cds--btn cds--btn--primary cds--btn--icon-only" aria-label="保存"><img class="catalog-icon" src="./svg/16/save.svg" alt=""></button></div>
-                <p class="catalog-subtitle">Sizes</p><div class="catalog-row"><button class="cds--btn cds--btn--primary cds--btn--sm">Small</button><button class="cds--btn cds--btn--primary cds--btn--md">Medium</button><button class="cds--btn cds--btn--primary">Large</button></div>
+              <article class="catalog-demo catalog-demo--wide" data-name="Button ボタン primary secondary tertiary ghost icon chat">
+                <div class="catalog-demo-header"><h3>Button</h3><code class="catalog-class">.mds--btn</code></div>
+                <div class="catalog-row">
+                  <button class="mds--btn mds--btn--primary">Primary</button>
+                  <button class="mds--btn mds--btn--secondary">Secondary</button>
+                  <button class="mds--btn mds--btn--tertiary">Tertiary</button>
+                  <button class="mds--btn mds--btn--ghost">Ghost</button>
+                  <button class="mds--btn mds--btn--primary" disabled>Disabled</button>
+                  <button class="mds--btn mds--btn--ghost mds--btn--icon-only" type="button" aria-label="保存">
+                    <svg class="mds--btn__icon" viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M13.9,4.6l-2.5-2.5C11.3,2.1,11.1,2,11,2H3C2.4,2,2,2.4,2,3v10c0,0.6,0.4,1,1,1h10c0.6,0,1-0.4,1-1V5C14,4.9,13.9,4.7,13.9,4.6z M6,3h4v2H6V3z M10,13H6V9h4V13z M11,13V9c0-0.6-0.4-1-1-1H6C5.4,8,5,8.4,5,9v4H3V3h2v2c0,0.6,0.4,1,1,1h4c0.6,0,1-0.4,1-1V3.2l2,2V13H11z"/>
+                    </svg>
+                  </button>
+                  <button class="mds--btn mds--btn--tertiary" type="button">
+                    ダウンロード
+                    <svg class="mds--btn__icon" viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M13 7 12.3 6.3 8.5 10.1 8.5 1 7.5 1 7.5 10.1 3.7 6.3 3 7 8 12z"/>
+                      <path d="M13,12v2H3v-2H2v2l0,0c0,0.6,0.4,1,1,1h10c0.6,0,1-0.4,1-1l0,0v-2H13z"/>
+                    </svg>
+                  </button>
+                </div>
+                <p class="catalog-subtitle">Sizes</p><div class="catalog-row"><button class="mds--btn mds--btn--primary mds--btn--s">Small</button><button class="mds--btn mds--btn--primary mds--btn--m">Medium</button><button class="mds--btn mds--btn--primary mds--btn--l">Large</button></div>
               </article>
               <article class="catalog-demo" data-name="Link リンク inline disabled visited">
-                <div class="catalog-demo-header"><h3>Link</h3><code class="catalog-class">.cds--link</code></div>
-                <div class="catalog-stack"><a class="cds--link" href="#actions">Default link</a><a class="cds--link cds--link--inline" href="#actions">Inline link</a><span class="cds--link cds--link--disabled" aria-disabled="true">Disabled link</span></div>
+                <div class="catalog-demo-header"><h3>Link</h3><code class="catalog-class">.mds--link</code></div>
+                <div class="catalog-stack"><a class="mds--link" href="#actions">Default link</a><a class="mds--link mds--link--inline" href="#actions">Inline link</a><span class="mds--link mds--link--disabled" aria-disabled="true">Disabled link</span></div>
               </article>
               <article class="catalog-demo" data-name="Overflow menu メニュー copy button menu item">
-                <div class="catalog-demo-header"><h3>Menu &amp; copy</h3><code class="catalog-class">.cds--menu / .cds--copy-btn</code></div>
-                <div class="catalog-row"><button class="cds--copy-btn" type="button" data-copy="npm install design-system" aria-label="コマンドをコピー"><img class="catalog-icon" src="./svg/16/save.svg" alt=""></button><div class="cds--menu cds--menu--open cds--menu--sm"><ul role="menu"><li class="cds--menu-item" role="menuitem"><span class="cds--menu-item__label">編集</span></li><li class="cds--menu-item cds--menu-item--danger" role="menuitem"><span class="cds--menu-item__label">削除</span></li></ul></div></div>
+                <div class="catalog-demo-header"><h3>Menu &amp; copy</h3><code class="catalog-class">.mds--menu / .mds--copy-btn</code></div>
+                <div class="catalog-row"><button class="mds--copy-btn" type="button" data-copy="npm install design-system" aria-label="コマンドをコピー"><img class="catalog-icon" src="./svg/16/save.svg" alt=""></button><div class="mds--menu mds--menu--open mds--menu--sm"><ul role="menu"><li class="mds--menu-item" role="menuitem"><span class="mds--menu-item__label">編集</span></li><li class="mds--menu-item mds--menu-item--danger" role="menuitem"><span class="mds--menu-item__label">削除</span></li></ul></div></div>
               </article>
             </div>
           </section>
@@ -181,41 +199,41 @@
             <div class="catalog-group-header"><h2>Inputs</h2><p>フォーム入力、選択、日時指定、ファイルアップロードの代表状態です。</p></div>
             <div class="catalog-grid">
               <article class="catalog-demo catalog-demo--wide" data-name="Text input テキスト入力 password textarea invalid warning readonly">
-                <div class="catalog-demo-header"><h3>Text input &amp; textarea</h3><code class="catalog-class">.cds--text-input / .cds--text-area</code></div>
+                <div class="catalog-demo-header"><h3>Text input &amp; textarea</h3><code class="catalog-class">.mds--text-input / .mds--text-area</code></div>
                 <div class="catalog-field-grid">
-                  <div class="cds--form-item cds--text-input-wrapper"><label class="cds--label" for="name">名前</label><div class="cds--text-input__field-wrapper"><input class="cds--text-input" id="name" type="text" placeholder="山田 太郎"></div><div class="cds--form__helper-text">フルネームを入力してください</div></div>
-                  <div class="cds--form-item cds--text-input-wrapper"><label class="cds--label" for="email">メール（エラー）</label><div class="cds--text-input__field-wrapper"><input class="cds--text-input cds--text-input--invalid" id="email" type="email" value="invalid"></div><div class="cds--form-requirement">正しいメールアドレスを入力してください</div></div>
-                  <div class="cds--form-item cds--text-input-wrapper"><label class="cds--label" for="password">パスワード</label><div class="cds--text-input__field-wrapper cds--password-input-wrapper"><input class="cds--text-input cds--password-input" id="password" type="password" value="password"><button class="cds--text-input--password__visibility__toggle cds--btn cds--btn--icon-only cds--btn--ghost" type="button" data-password aria-label="パスワードを表示"><img class="catalog-icon" src="./svg/16/view.svg" alt=""></button></div></div>
-                  <div class="cds--form-item"><label class="cds--label" for="message">メッセージ</label><div class="cds--text-area__wrapper"><textarea class="cds--text-area" id="message" rows="4" placeholder="内容を入力"></textarea></div></div>
+                  <div class="mds--form-item mds--text-input-wrapper"><label class="mds--label" for="name">名前</label><div class="mds--text-input__field-wrapper"><input class="mds--text-input" id="name" type="text" placeholder="山田 太郎"></div><div class="mds--form__helper-text">フルネームを入力してください</div></div>
+                  <div class="mds--form-item mds--text-input-wrapper"><label class="mds--label" for="email">メール（エラー）</label><div class="mds--text-input__field-wrapper"><input class="mds--text-input mds--text-input--invalid" id="email" type="email" value="invalid"></div><div class="mds--form-requirement">正しいメールアドレスを入力してください</div></div>
+                  <div class="mds--form-item mds--text-input-wrapper"><label class="mds--label" for="password">パスワード</label><div class="mds--text-input__field-wrapper mds--password-input-wrapper"><input class="mds--text-input mds--password-input" id="password" type="password" value="password"><button class="mds--text-input--password__visibility__toggle mds--btn mds--btn--icon-only mds--btn--ghost" type="button" data-password aria-label="パスワードを表示"><svg class="mds--btn__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M15.5,7.8C14.3,4.7,11.3,2.6,8,2.5C4.7,2.6,1.7,4.7,0.5,7.8c0,0.1,0,0.2,0,0.3c1.2,3.1,4.1,5.2,7.5,5.3 c3.3-0.1,6.3-2.2,7.5-5.3C15.5,8.1,15.5,7.9,15.5,7.8z M8,12.5c-2.7,0-5.4-2-6.5-4.5c1-2.5,3.8-4.5,6.5-4.5s5.4,2,6.5,4.5 C13.4,10.5,10.6,12.5,8,12.5z"/><path d="M8,5C6.3,5,5,6.3,5,8s1.3,3,3,3s3-1.3,3-3S9.7,5,8,5z M8,10c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S9.1,10,8,10z"/></svg></button></div></div>
+                  <div class="mds--form-item"><label class="mds--label" for="message">メッセージ</label><div class="mds--text-area__wrapper"><textarea class="mds--text-area" id="message" rows="4" placeholder="内容を入力"></textarea></div></div>
                 </div>
               </article>
               <article class="catalog-demo" data-name="Checkbox チェックボックス radio ラジオ group">
-                <div class="catalog-demo-header"><h3>Checkbox &amp; radio</h3><code class="catalog-class">.cds--checkbox / .cds--radio-button</code></div>
-                <fieldset class="cds--fieldset"><legend class="cds--label">通知方法</legend><div class="catalog-stack"><div class="cds--checkbox-wrapper"><input class="cds--checkbox" id="check-email" type="checkbox" checked><label class="cds--checkbox-label" for="check-email"><span class="cds--checkbox-label-text">メール</span></label></div><div class="cds--checkbox-wrapper"><input class="cds--checkbox" id="check-push" type="checkbox"><label class="cds--checkbox-label" for="check-push"><span class="cds--checkbox-label-text">プッシュ通知</span></label></div><div class="cds--radio-button-group"><div class="cds--radio-button-wrapper"><input class="cds--radio-button" id="radio-a" name="plan" type="radio" checked><label class="cds--radio-button__label" for="radio-a"><span class="cds--radio-button__appearance"></span><span class="cds--radio-button__label-text">Standard</span></label></div><div class="cds--radio-button-wrapper"><input class="cds--radio-button" id="radio-b" name="plan" type="radio"><label class="cds--radio-button__label" for="radio-b"><span class="cds--radio-button__appearance"></span><span class="cds--radio-button__label-text">Pro</span></label></div></div></div></fieldset>
+                <div class="catalog-demo-header"><h3>Checkbox &amp; radio</h3><code class="catalog-class">.mds--checkbox / .mds--radio-button</code></div>
+                <fieldset class="mds--fieldset"><legend class="mds--label">通知方法</legend><div class="catalog-stack"><div class="mds--checkbox-wrapper"><input class="mds--checkbox" id="check-email" type="checkbox" checked><label class="mds--checkbox-label" for="check-email"><span class="mds--checkbox-label-text">メール</span></label></div><div class="mds--checkbox-wrapper"><input class="mds--checkbox" id="check-push" type="checkbox"><label class="mds--checkbox-label" for="check-push"><span class="mds--checkbox-label-text">プッシュ通知</span></label></div><div class="mds--radio-button-group"><div class="mds--radio-button-wrapper"><input class="mds--radio-button" id="radio-a" name="plan" type="radio" checked><label class="mds--radio-button__label" for="radio-a"><span class="mds--radio-button__appearance"></span><span class="mds--radio-button__label-text">Standard</span></label></div><div class="mds--radio-button-wrapper"><input class="mds--radio-button" id="radio-b" name="plan" type="radio"><label class="mds--radio-button__label" for="radio-b"><span class="mds--radio-button__appearance"></span><span class="mds--radio-button__label-text">Pro</span></label></div></div></div></fieldset>
               </article>
               <article class="catalog-demo" data-name="Toggle トグル switch readonly disabled">
-                <div class="catalog-demo-header"><h3>Toggle</h3><code class="catalog-class">.cds--toggle</code></div>
-                <div class="catalog-stack"><div class="cds--form-item"><input class="cds--toggle-input" id="toggle-1" type="checkbox" checked><label class="cds--toggle-input__label" for="toggle-1"><span class="cds--toggle__label-text">自動保存</span><span class="cds--toggle__switch"><span class="cds--toggle__text--off" aria-hidden="true">Off</span><span class="cds--toggle__text--on" aria-hidden="true">On</span></span></label></div><div class="cds--form-item"><input class="cds--toggle-input" id="toggle-2" type="checkbox" disabled><label class="cds--toggle-input__label" for="toggle-2"><span class="cds--toggle__label-text">無効な設定</span><span class="cds--toggle__switch"></span></label></div></div>
+                <div class="catalog-demo-header"><h3>Toggle</h3><code class="catalog-class">.mds--toggle</code></div>
+                <div class="catalog-stack"><div class="mds--form-item"><input class="mds--toggle-input" id="toggle-1" type="checkbox" checked><label class="mds--toggle-input__label" for="toggle-1"><span class="mds--toggle__label-text">自動保存</span><span class="mds--toggle__switch"><span class="mds--toggle__text--off" aria-hidden="true">Off</span><span class="mds--toggle__text--on" aria-hidden="true">On</span></span></label></div><div class="mds--form-item"><input class="mds--toggle-input" id="toggle-2" type="checkbox" disabled><label class="mds--toggle-input__label" for="toggle-2"><span class="mds--toggle__label-text">無効な設定</span><span class="mds--toggle__switch"></span></label></div></div>
               </article>
               <article class="catalog-demo" data-name="Select セレクト dropdown combo box multi select list box">
-                <div class="catalog-demo-header"><h3>Select &amp; dropdown</h3><code class="catalog-class">.cds--select / .cds--dropdown</code></div>
-                <div class="catalog-stack"><div class="cds--form-item"><label class="cds--label" for="select-country">地域</label><div class="cds--select-input__wrapper"><select class="cds--select-input" id="select-country"><option>関東</option><option>関西</option><option>九州</option></select><img class="cds--select__arrow" src="./svg/16/chevron--down.svg" alt=""></div></div><div class="cds--dropdown cds--list-box"><button class="cds--list-box__field" type="button"><span class="cds--list-box__label">選択済みの項目</span><img class="catalog-icon" src="./svg/16/chevron--down.svg" alt=""></button></div></div>
+                <div class="catalog-demo-header"><h3>Select &amp; dropdown</h3><code class="catalog-class">.mds--select / .mds--dropdown</code></div>
+                <div class="catalog-stack"><div class="mds--form-item"><label class="mds--label" for="select-country">地域</label><div class="mds--select-input__wrapper"><select class="mds--select-input" id="select-country"><option>関東</option><option>関西</option><option>九州</option></select><img class="mds--select__arrow" src="./svg/16/chevron--down.svg" alt=""></div></div><div class="mds--dropdown mds--list-box"><button class="mds--list-box__field" type="button"><span class="mds--list-box__label">選択済みの項目</span><img class="catalog-icon" src="./svg/16/chevron--down.svg" alt=""></button></div></div>
               </article>
               <article class="catalog-demo" data-name="Search 検索 expandable fluid">
-                <div class="catalog-demo-header"><h3>Search</h3><code class="catalog-class">.cds--search</code></div>
-                <div class="cds--search cds--search--lg" role="search"><div class="cds--search-magnifier"><img class="catalog-icon" src="./svg/16/search.svg" alt=""></div><label class="cds--label" for="demo-search">検索</label><input class="cds--search-input" id="demo-search" type="search" placeholder="キーワードを入力"><button class="cds--search-close cds--search-close--hidden" type="button" aria-label="クリア"><img class="catalog-icon" src="./svg/16/close--filled.svg" alt=""></button></div>
+                <div class="catalog-demo-header"><h3>Search</h3><code class="catalog-class">.mds--search</code></div>
+                <div class="mds--search mds--search--lg" role="search"><div class="mds--search-magnifier"><img class="catalog-icon" src="./svg/16/search.svg" alt=""></div><label class="mds--label" for="demo-search">検索</label><input class="mds--search-input" id="demo-search" type="search" placeholder="キーワードを入力"><button class="mds--search-close mds--search-close--hidden" type="button" aria-label="クリア"><img class="catalog-icon" src="./svg/16/close--filled.svg" alt=""></button></div>
               </article>
               <article class="catalog-demo" data-name="Number input 数値 date picker 日付 time picker 時刻">
-                <div class="catalog-demo-header"><h3>Number, date &amp; time</h3><code class="catalog-class">.cds--number / .cds--date-picker / .cds--time-picker</code></div>
-                <div class="catalog-field-grid"><div class="cds--form-item"><label class="cds--label" for="quantity">数量</label><div class="cds--number"><input id="quantity" type="number" value="12"><div class="cds--number__controls"><button class="cds--number__control-btn up-icon" type="button" aria-label="増やす">＋</button><button class="cds--number__control-btn down-icon" type="button" aria-label="減らす">−</button></div></div></div><div class="cds--form-item"><label class="cds--label" for="date">日付</label><div class="cds--date-picker cds--date-picker--single"><div class="cds--date-picker-container"><input class="cds--date-picker__input" id="date" type="date"></div></div></div><div class="cds--form-item"><label class="cds--label" for="time">時刻</label><div class="cds--time-picker"><input class="cds--time-picker__input-field" id="time" type="time" value="10:30"></div></div></div>
+                <div class="catalog-demo-header"><h3>Number, date &amp; time</h3><code class="catalog-class">.mds--number / .mds--date-picker / .mds--time-picker</code></div>
+                <div class="catalog-field-grid"><div class="mds--form-item"><label class="mds--label" for="quantity">数量</label><div class="mds--number"><input id="quantity" type="number" value="12"><div class="mds--number__controls"><button class="mds--number__control-btn up-icon" type="button" aria-label="増やす">＋</button><button class="mds--number__control-btn down-icon" type="button" aria-label="減らす">−</button></div></div></div><div class="mds--form-item"><label class="mds--label" for="date">日付</label><div class="mds--date-picker mds--date-picker--single"><div class="mds--date-picker-container"><input class="mds--date-picker__input" id="date" type="date"></div></div></div><div class="mds--form-item"><label class="mds--label" for="time">時刻</label><div class="mds--time-picker"><input class="mds--time-picker__input-field" id="time" type="time" value="10:30"></div></div></div>
               </article>
               <article class="catalog-demo" data-name="Slider スライダー range two handles">
-                <div class="catalog-demo-header"><h3>Slider</h3><code class="catalog-class">.cds--slider</code></div>
-                <div class="cds--slider-container"><span class="cds--slider__range-label">0</span><div class="cds--slider"><div class="cds--slider__track"><div class="cds--slider__filled-track" style="width:65%"></div><input type="range" min="0" max="100" value="65" aria-label="値"></div></div><span class="cds--slider__range-label">100</span><input class="cds--text-input cds--slider-text-input" type="number" value="65" aria-label="スライダーの値"></div>
+                <div class="catalog-demo-header"><h3>Slider</h3><code class="catalog-class">.mds--slider</code></div>
+                <div class="mds--slider-container"><span class="mds--slider__range-label">0</span><div class="mds--slider"><div class="mds--slider__track"><div class="mds--slider__filled-track" style="width:65%"></div><input type="range" min="0" max="100" value="65" aria-label="値"></div></div><span class="mds--slider__range-label">100</span><input class="mds--text-input mds--slider-text-input" type="number" value="65" aria-label="スライダーの値"></div>
               </article>
               <article class="catalog-demo" data-name="File uploader ファイル upload drop zone">
-                <div class="catalog-demo-header"><h3>File uploader</h3><code class="catalog-class">.cds--file</code></div>
-                <div class="cds--form-item"><p class="cds--label-description">PNG または JPG、最大 5 MB</p><label class="cds--btn cds--btn--secondary cds--file-browse-btn" for="file-demo">ファイルを選択</label><input class="cds--file-input" id="file-demo" type="file"><div class="cds--file-container"><div class="cds--file"><p class="cds--file-filename">brand-guide.pdf</p><span class="cds--file-complete"><img class="catalog-icon" src="./svg/16/checkmark--filled.svg" alt="完了"></span></div></div></div>
+                <div class="catalog-demo-header"><h3>File uploader</h3><code class="catalog-class">.mds--file</code></div>
+                <div class="mds--form-item"><p class="mds--label-description">PNG または JPG、最大 5 MB</p><label class="mds--btn mds--btn--secondary mds--file-browse-btn" for="file-demo">ファイルを選択</label><input class="mds--file-input" id="file-demo" type="file"><div class="mds--file-container"><div class="mds--file"><p class="mds--file-filename">brand-guide.pdf</p><span class="mds--file-complete"><img class="catalog-icon" src="./svg/16/checkmark--filled.svg" alt="完了"></span></div></div></div>
               </article>
             </div>
           </section>
@@ -224,28 +242,28 @@
             <div class="catalog-group-header"><h2>Navigation</h2><p>現在位置の把握と、画面・ページ・ステップ間の移動を助ける要素です。</p></div>
             <div class="catalog-grid">
               <article class="catalog-demo catalog-demo--wide" data-name="Header ヘッダー side nav navigation switcher">
-                <div class="catalog-demo-header"><h3>Header &amp; side navigation</h3><code class="catalog-class">.cds--header / .cds--side-nav</code></div>
-                <div style="position:relative;height:230px;overflow:hidden;border:1px solid var(--cds-border-subtle-01)"><header class="cds--header" aria-label="サンプルヘッダー" style="position:absolute"><a class="cds--header__name" href="#navigation"><span class="cds--header__name--prefix">KT&nbsp;</span>Design</a><nav class="cds--header__nav"><ul class="cds--header__menu-bar"><li><a class="cds--header__menu-item cds--header__menu-item--current" href="#navigation">Catalog</a></li><li><a class="cds--header__menu-item" href="#navigation">Guidelines</a></li></ul></nav><div class="cds--header__global"><button class="cds--header__action" aria-label="設定"><img class="catalog-icon--20" src="./svg/20/menu.svg" alt=""></button></div></header><aside class="cds--side-nav cds--side-nav--expanded" style="position:absolute;top:48px;height:182px"><nav class="cds--side-nav__navigation"><ul class="cds--side-nav__items"><li class="cds--side-nav__item"><a class="cds--side-nav__link cds--side-nav__link--current" href="#navigation"><span class="cds--side-nav__link-text">Overview</span></a></li><li class="cds--side-nav__item"><a class="cds--side-nav__link" href="#navigation"><span class="cds--side-nav__link-text">Components</span></a></li></ul></nav></aside></div>
+                <div class="catalog-demo-header"><h3>Header &amp; side navigation</h3><code class="catalog-class">.mds--header / .mds--side-nav</code></div>
+                <div style="position:relative;height:230px;overflow:hidden;border:1px solid var(--mds-border-subtle-01)"><header class="mds--header" aria-label="サンプルヘッダー" style="position:absolute"><a class="mds--header__name" href="#navigation"><span class="mds--header__name--prefix">KT&nbsp;</span>Design</a><nav class="mds--header__nav"><ul class="mds--header__menu-bar"><li><a class="mds--header__menu-item mds--header__menu-item--current" href="#navigation">Catalog</a></li><li><a class="mds--header__menu-item" href="#navigation">Guidelines</a></li></ul></nav><div class="mds--header__global"><button class="mds--header__action" aria-label="設定"><img class="catalog-icon--20" src="./svg/20/menu.svg" alt=""></button></div></header><aside class="mds--side-nav mds--side-nav--expanded" style="position:absolute;top:48px;height:182px"><nav class="mds--side-nav__navigation"><ul class="mds--side-nav__items"><li class="mds--side-nav__item"><a class="mds--side-nav__link mds--side-nav__link--current" href="#navigation"><span class="mds--side-nav__link-text">Overview</span></a></li><li class="mds--side-nav__item"><a class="mds--side-nav__link" href="#navigation"><span class="mds--side-nav__link-text">Components</span></a></li></ul></nav></aside></div>
               </article>
               <article class="catalog-demo" data-name="Breadcrumb パンくず">
-                <div class="catalog-demo-header"><h3>Breadcrumb</h3><code class="catalog-class">.cds--breadcrumb</code></div>
-                <nav class="cds--breadcrumb" aria-label="パンくず"><ol><li class="cds--breadcrumb-item"><a class="cds--link" href="#navigation">ホーム</a></li><li class="cds--breadcrumb-item"><a class="cds--link" href="#navigation">ライブラリ</a></li><li class="cds--breadcrumb-item cds--breadcrumb-item--current"><span>コンポーネント</span></li></ol></nav>
+                <div class="catalog-demo-header"><h3>Breadcrumb</h3><code class="catalog-class">.mds--breadcrumb</code></div>
+                <nav class="mds--breadcrumb" aria-label="パンくず"><ol><li class="mds--breadcrumb-item"><a class="mds--link" href="#navigation">ホーム</a></li><li class="mds--breadcrumb-item"><a class="mds--link" href="#navigation">ライブラリ</a></li><li class="mds--breadcrumb-item mds--breadcrumb-item--current"><span>コンポーネント</span></li></ol></nav>
               </article>
               <article class="catalog-demo" data-name="Tabs タブ contained vertical dismissable">
-                <div class="catalog-demo-header"><h3>Tabs</h3><code class="catalog-class">.cds--tabs</code></div>
-                <div class="cds--tabs cds--tabs--contained"><ul class="cds--tabs__nav" role="tablist"><li class="cds--tabs__nav-item cds--tabs__nav-item--selected" role="presentation"><button class="cds--tabs__nav-link" role="tab" aria-selected="true">概要</button></li><li class="cds--tabs__nav-item" role="presentation"><button class="cds--tabs__nav-link" role="tab" aria-selected="false">仕様</button></li><li class="cds--tabs__nav-item" role="presentation"><button class="cds--tabs__nav-link" role="tab" aria-selected="false">履歴</button></li></ul></div><div class="catalog-surface">選択中のタブ内容</div>
+                <div class="catalog-demo-header"><h3>Tabs</h3><code class="catalog-class">.mds--tabs</code></div>
+                <div class="mds--tabs mds--tabs--contained"><ul class="mds--tabs__nav" role="tablist"><li class="mds--tabs__nav-item mds--tabs__nav-item--selected" role="presentation"><button class="mds--tabs__nav-link" role="tab" aria-selected="true">概要</button></li><li class="mds--tabs__nav-item" role="presentation"><button class="mds--tabs__nav-link" role="tab" aria-selected="false">仕様</button></li><li class="mds--tabs__nav-item" role="presentation"><button class="mds--tabs__nav-link" role="tab" aria-selected="false">履歴</button></li></ul></div><div class="catalog-surface">選択中のタブ内容</div>
               </article>
               <article class="catalog-demo" data-name="Content switcher コンテンツスイッチャー segmented">
-                <div class="catalog-demo-header"><h3>Content switcher</h3><code class="catalog-class">.cds--content-switcher</code></div>
-                <div class="cds--content-switcher" role="tablist"><button class="cds--content-switcher-btn cds--content-switcher--selected" role="tab" aria-selected="true"><span>日</span></button><button class="cds--content-switcher-btn" role="tab"><span>週</span></button><button class="cds--content-switcher-btn" role="tab"><span>月</span></button></div>
+                <div class="catalog-demo-header"><h3>Content switcher</h3><code class="catalog-class">.mds--content-switcher</code></div>
+                <div class="mds--content-switcher" role="tablist"><button class="mds--content-switcher-btn mds--content-switcher--selected" role="tab" aria-selected="true"><span>日</span></button><button class="mds--content-switcher-btn" role="tab"><span>週</span></button><button class="mds--content-switcher-btn" role="tab"><span>月</span></button></div>
               </article>
               <article class="catalog-demo" data-name="Pagination ページネーション pagination nav">
-                <div class="catalog-demo-header"><h3>Pagination</h3><code class="catalog-class">.cds--pagination</code></div>
-                <div class="cds--pagination"><div class="cds--pagination__left"><span class="cds--pagination__text">1–10 / 42件</span></div><div class="cds--pagination__right"><button class="cds--pagination__button cds--pagination__button--backward" aria-label="前へ"><img class="catalog-icon" src="./svg/16/chevron--left.svg" alt=""></button><span class="cds--pagination__text">1 / 5ページ</span><button class="cds--pagination__button cds--pagination__button--forward" aria-label="次へ"><img class="catalog-icon" src="./svg/16/chevron--right.svg" alt=""></button></div></div>
+                <div class="catalog-demo-header"><h3>Pagination</h3><code class="catalog-class">.mds--pagination</code></div>
+                <div class="mds--pagination"><div class="mds--pagination__left"><span class="mds--pagination__text">1–10 / 42件</span></div><div class="mds--pagination__right"><button class="mds--pagination__button mds--pagination__button--backward" aria-label="前へ"><img class="catalog-icon" src="./svg/16/chevron--left.svg" alt=""></button><span class="mds--pagination__text">1 / 5ページ</span><button class="mds--pagination__button mds--pagination__button--forward" aria-label="次へ"><img class="catalog-icon" src="./svg/16/chevron--right.svg" alt=""></button></div></div>
               </article>
               <article class="catalog-demo" data-name="Progress indicator ステップ progress vertical">
-                <div class="catalog-demo-header"><h3>Progress indicator</h3><code class="catalog-class">.cds--progress</code></div>
-                <ul class="cds--progress"><li class="cds--progress-step cds--progress-step--complete"><button class="cds--progress-step-button"><span class="cds--progress-line"></span><span class="cds--progress-label">入力</span></button></li><li class="cds--progress-step cds--progress-step--current"><button class="cds--progress-step-button"><span class="cds--progress-line"></span><span class="cds--progress-label">確認</span></button></li><li class="cds--progress-step cds--progress-step--incomplete"><button class="cds--progress-step-button"><span class="cds--progress-line"></span><span class="cds--progress-label">完了</span></button></li></ul>
+                <div class="catalog-demo-header"><h3>Progress indicator</h3><code class="catalog-class">.mds--progress</code></div>
+                <ul class="mds--progress"><li class="mds--progress-step mds--progress-step--complete"><button class="mds--progress-step-button"><span class="mds--progress-line"></span><span class="mds--progress-label">入力</span></button></li><li class="mds--progress-step mds--progress-step--current"><button class="mds--progress-step-button"><span class="mds--progress-line"></span><span class="mds--progress-label">確認</span></button></li><li class="mds--progress-step mds--progress-step--incomplete"><button class="mds--progress-step-button"><span class="mds--progress-line"></span><span class="mds--progress-label">完了</span></button></li></ul>
               </article>
             </div>
           </section>
@@ -254,44 +272,44 @@
             <div class="catalog-group-header"><h2>Data display</h2><p>テーブル、カード、タイル、リスト、タグなど情報を整理して提示する要素です。</p></div>
             <div class="catalog-grid">
               <article class="catalog-demo catalog-demo--wide" data-name="Data table データテーブル table zebra sort toolbar">
-                <div class="catalog-demo-header"><h3>Data table</h3><code class="catalog-class">.cds--data-table</code></div>
-                <div class="cds--data-table-container"><div class="cds--data-table-header"><h4 class="cds--data-table-header__title">プロジェクト</h4><p class="cds--data-table-header__description">最近更新された項目</p></div><div class="catalog-table-wrap"><table class="cds--data-table cds--data-table--zebra"><thead><tr><th><span class="cds--table-header-label">名前</span></th><th><span class="cds--table-header-label">状態</span></th><th><span class="cds--table-header-label">更新日</span></th><th><span class="cds--table-header-label">所有者</span></th></tr></thead><tbody><tr><td>Design tokens</td><td><span class="cds--tag cds--tag--green">公開中</span></td><td>2026-11-24</td><td>佐藤</td></tr><tr class="cds--data-table--selected"><td>Components</td><td><span class="cds--tag cds--tag--blue">レビュー</span></td><td>2026-11-25</td><td>田中</td></tr><tr><td>Guidelines</td><td><span class="cds--tag cds--tag--warm-gray">下書き</span></td><td>2026-11-26</td><td>鈴木</td></tr></tbody></table></div></div>
+                <div class="catalog-demo-header"><h3>Data table</h3><code class="catalog-class">.mds--data-table</code></div>
+                <div class="mds--data-table-container"><div class="mds--data-table-header"><h4 class="mds--data-table-header__title">プロジェクト</h4><p class="mds--data-table-header__description">最近更新された項目</p></div><div class="catalog-table-wrap"><table class="mds--data-table mds--data-table--zebra"><thead><tr><th><span class="mds--table-header-label">名前</span></th><th><span class="mds--table-header-label">状態</span></th><th><span class="mds--table-header-label">更新日</span></th><th><span class="mds--table-header-label">所有者</span></th></tr></thead><tbody><tr><td>Design tokens</td><td><span class="mds--tag mds--tag--green">公開中</span></td><td>2026-11-24</td><td>佐藤</td></tr><tr class="mds--data-table--selected"><td>Components</td><td><span class="mds--tag mds--tag--blue">レビュー</span></td><td>2026-11-25</td><td>田中</td></tr><tr><td>Guidelines</td><td><span class="mds--tag mds--tag--warm-gray">下書き</span></td><td>2026-11-26</td><td>鈴木</td></tr></tbody></table></div></div>
               </article>
               <article class="catalog-demo catalog-demo--wide" data-name="Card カード clickable horizontal productive carousel">
-                <div class="catalog-demo-header"><h3>Card &amp; carousel</h3><code class="catalog-class">.cds--card / .cds--carousel</code></div>
+                <div class="catalog-demo-header"><h3>Card &amp; carousel</h3><code class="catalog-class">.mds--card / .mds--carousel</code></div>
                 <div class="catalog-card-grid"><article class="catalog-card"><h4>Brand foundations</h4><p>色、文字、余白の基本原則をまとめています。</p></article><article class="catalog-card"><h4>Interaction patterns</h4><p>一貫した操作体験をつくるパターン集です。</p></article><article class="catalog-card"><h4>Content guidance</h4><p>明確で親しみやすい文章のための指針です。</p></article></div>
               </article>
               <article class="catalog-demo" data-name="Tile タイル selectable clickable expandable radio">
-                <div class="catalog-demo-header"><h3>Tiles</h3><code class="catalog-class">.cds--tile</code></div>
-                <div class="catalog-stack"><div class="cds--tile">Default tile</div><button class="cds--tile cds--tile--clickable" type="button">Clickable tile</button><label class="cds--tile cds--tile--selectable cds--tile--is-selected"><input class="cds--tile-input" type="checkbox" checked><span class="cds--tile__checkmark"><img class="catalog-icon" src="./svg/16/checkmark--filled.svg" alt=""></span><span class="cds--tile-content">Selected tile</span></label></div>
+                <div class="catalog-demo-header"><h3>Tiles</h3><code class="catalog-class">.mds--tile</code></div>
+                <div class="catalog-stack"><div class="mds--tile">Default tile</div><button class="mds--tile mds--tile--clickable" type="button">Clickable tile</button><label class="mds--tile mds--tile--selectable mds--tile--is-selected"><input class="mds--tile-input" type="checkbox" checked><span class="mds--tile__checkmark"><img class="catalog-icon" src="./svg/16/checkmark--filled.svg" alt=""></span><span class="mds--tile-content">Selected tile</span></label></div>
               </article>
               <article class="catalog-demo" data-name="Tag タグ badge indicator status operational filter">
-                <div class="catalog-demo-header"><h3>Tag &amp; badge</h3><code class="catalog-class">.cds--tag / .cds--badge-indicator</code></div>
-                <div class="catalog-row"><span class="cds--tag cds--tag--red">Red</span><span class="cds--tag cds--tag--magenta">Magenta</span><span class="cds--tag cds--tag--purple">Purple</span><span class="cds--tag cds--tag--blue">Blue</span><span class="cds--tag cds--tag--cyan">Cyan</span><span class="cds--tag cds--tag--teal">Teal</span><span class="cds--tag cds--tag--green">Green</span><button class="cds--tag cds--tag--filter">Filter ×</button><span class="cds--badge-indicator cds--badge-indicator--count">8</span></div>
+                <div class="catalog-demo-header"><h3>Tag &amp; badge</h3><code class="catalog-class">.mds--tag / .mds--badge-indicator</code></div>
+                <div class="catalog-row"><span class="mds--tag mds--tag--red">Red</span><span class="mds--tag mds--tag--magenta">Magenta</span><span class="mds--tag mds--tag--purple">Purple</span><span class="mds--tag mds--tag--blue">Blue</span><span class="mds--tag mds--tag--cyan">Cyan</span><span class="mds--tag mds--tag--teal">Teal</span><span class="mds--tag mds--tag--green">Green</span><button class="mds--tag mds--tag--filter">Filter ×</button><span class="mds--badge-indicator mds--badge-indicator--count">8</span></div>
               </article>
               <article class="catalog-demo" data-name="Structured list 構造化リスト contained list list ordered unordered">
-                <div class="catalog-demo-header"><h3>Lists</h3><code class="catalog-class">.cds--structured-list / .cds--list</code></div>
-                <div class="cds--structured-list"><div class="cds--structured-list-thead"><div class="cds--structured-list-row cds--structured-list-row--header-row"><div class="cds--structured-list-th">項目</div><div class="cds--structured-list-th">値</div></div></div><div class="cds--structured-list-tbody"><div class="cds--structured-list-row"><div class="cds--structured-list-td">Version</div><div class="cds--structured-list-td">2.4.0</div></div><div class="cds--structured-list-row"><div class="cds--structured-list-td">License</div><div class="cds--structured-list-td">Apache-2.0</div></div></div></div>
+                <div class="catalog-demo-header"><h3>Lists</h3><code class="catalog-class">.mds--structured-list / .mds--list</code></div>
+                <div class="mds--structured-list"><div class="mds--structured-list-thead"><div class="mds--structured-list-row mds--structured-list-row--header-row"><div class="mds--structured-list-th">項目</div><div class="mds--structured-list-th">値</div></div></div><div class="mds--structured-list-tbody"><div class="mds--structured-list-row"><div class="mds--structured-list-td">Version</div><div class="mds--structured-list-td">2.4.0</div></div><div class="mds--structured-list-row"><div class="mds--structured-list-td">License</div><div class="mds--structured-list-td">Apache-2.0</div></div></div></div>
               </article>
               <article class="catalog-demo" data-name="Accordion アコーディオン flush start end">
-                <div class="catalog-demo-header"><h3>Accordion</h3><code class="catalog-class">.cds--accordion</code></div>
-                <ul class="cds--accordion" data-accordion><li class="cds--accordion__item cds--accordion__item--active"><button class="cds--accordion__heading" type="button" aria-expanded="true"><img class="cds--accordion__arrow" src="./svg/16/chevron--down.svg" alt=""><span class="cds--accordion__title">デザイントークンとは？</span></button><div class="cds--accordion__wrapper"><div class="cds--accordion__content"><p>デザイン上の判断を再利用可能な名前と値で表したものです。</p></div></div></li><li class="cds--accordion__item"><button class="cds--accordion__heading" type="button" aria-expanded="false"><img class="cds--accordion__arrow" src="./svg/16/chevron--down.svg" alt=""><span class="cds--accordion__title">どのテーマを使えますか？</span></button><div class="cds--accordion__wrapper"><div class="cds--accordion__content"><p>Noodle、Dark、Forest、High contrast の4種類です。</p></div></div></li></ul>
+                <div class="catalog-demo-header"><h3>Accordion</h3><code class="catalog-class">.mds--accordion</code></div>
+                <ul class="mds--accordion" data-accordion><li class="mds--accordion__item mds--accordion__item--active"><button class="mds--accordion__heading" type="button" aria-expanded="true"><img class="mds--accordion__arrow" src="./svg/16/chevron--down.svg" alt=""><span class="mds--accordion__title">デザイントークンとは？</span></button><div class="mds--accordion__wrapper"><div class="mds--accordion__content"><p>デザイン上の判断を再利用可能な名前と値で表したものです。</p></div></div></li><li class="mds--accordion__item"><button class="mds--accordion__heading" type="button" aria-expanded="false"><img class="mds--accordion__arrow" src="./svg/16/chevron--down.svg" alt=""><span class="mds--accordion__title">どのテーマを使えますか？</span></button><div class="mds--accordion__wrapper"><div class="mds--accordion__content"><p>Noodle、Dark、Forest、High contrast の4種類です。</p></div></div></li></ul>
               </article>
               <article class="catalog-demo" data-name="Tree ツリー hierarchy node selected disabled">
-                <div class="catalog-demo-header"><h3>Tree view</h3><code class="catalog-class">.cds--tree</code></div>
-                <ul class="cds--tree"><li class="cds--tree-node cds--tree-parent-node"><button class="cds--tree-parent-node__toggle" aria-label="展開"><img class="catalog-icon" src="./svg/16/chevron--down.svg" alt=""></button><span class="cds--tree-node__label">src</span><ul role="group"><li class="cds--tree-node cds--tree-leaf-node cds--tree-node--selected"><span class="cds--tree-node__label">components.html</span></li><li class="cds--tree-node cds--tree-leaf-node"><span class="cds--tree-node__label">styles.css</span></li></ul></li></ul>
+                <div class="catalog-demo-header"><h3>Tree view</h3><code class="catalog-class">.mds--tree</code></div>
+                <ul class="mds--tree"><li class="mds--tree-node mds--tree-parent-node"><button class="mds--tree-parent-node__toggle" aria-label="展開"><img class="catalog-icon" src="./svg/16/chevron--down.svg" alt=""></button><span class="mds--tree-node__label">src</span><ul role="group"><li class="mds--tree-node mds--tree-leaf-node mds--tree-node--selected"><span class="mds--tree-node__label">components.html</span></li><li class="mds--tree-node mds--tree-leaf-node"><span class="mds--tree-node__label">styles.css</span></li></ul></li></ul>
               </article>
               <article class="catalog-demo" data-name="Code snippet コードスニペット inline single multi copy">
-                <div class="catalog-demo-header"><h3>Code snippet</h3><code class="catalog-class">.cds--snippet</code></div>
-                <div class="catalog-stack"><div class="cds--snippet cds--snippet--single"><code>&lt;button class=&quot;cds--btn&quot;&gt;Save&lt;/button&gt;</code><button class="cds--snippet-button" aria-label="コピー"><img class="catalog-icon" src="./svg/16/save.svg" alt=""></button></div><span class="cds--snippet cds--snippet--inline"><code>npm run build</code></span></div>
+                <div class="catalog-demo-header"><h3>Code snippet</h3><code class="catalog-class">.mds--snippet</code></div>
+                <div class="catalog-stack"><div class="mds--snippet mds--snippet--single"><code>&lt;button class=&quot;mds--btn&quot;&gt;Save&lt;/button&gt;</code><button class="mds--snippet-button" aria-label="コピー"><img class="catalog-icon" src="./svg/16/save.svg" alt=""></button></div><span class="mds--snippet mds--snippet--inline"><code>npm run build</code></span></div>
               </article>
               <article class="catalog-demo" data-name="Big number 数値 KPI metric user avatar アバター">
-                <div class="catalog-demo-header"><h3>Big number &amp; avatar</h3><code class="catalog-class">.cds--big-number / .cds--user-avatar</code></div>
-                <div class="catalog-row" style="justify-content:space-between"><div class="cds--big-number"><p class="cds--big-number__label">Adoption</p><p class="cds--big-number__value">87.4%</p></div><div class="catalog-row"><div class="cds--user-avatar cds--user-avatar--sm cds--user-avatar--order-1-cyan">YK</div><div class="cds--user-avatar cds--user-avatar--md cds--user-avatar--order-3-green">MS</div><div class="cds--user-avatar cds--user-avatar--lg cds--user-avatar--order-5-purple">TN</div></div></div>
+                <div class="catalog-demo-header"><h3>Big number &amp; avatar</h3><code class="catalog-class">.mds--big-number / .mds--user-avatar</code></div>
+                <div class="catalog-row" style="justify-content:space-between"><div class="mds--big-number"><p class="mds--big-number__label">Adoption</p><p class="mds--big-number__value">87.4%</p></div><div class="catalog-row"><div class="mds--user-avatar mds--user-avatar--sm mds--user-avatar--order-1-cyan">YK</div><div class="mds--user-avatar mds--user-avatar--md mds--user-avatar--order-3-green">MS</div><div class="mds--user-avatar mds--user-avatar--lg mds--user-avatar--order-5-purple">TN</div></div></div>
               </article>
               <article class="catalog-demo" data-name="Empty state 空状態 full page error error guide banner">
-                <div class="catalog-demo-header"><h3>Empty state</h3><code class="catalog-class">.cds--empty-state / .cds--full-page-error</code></div>
-                <div style="text-align:center;padding:24px"><img class="catalog-icon--32" src="./svg/32/search.svg" alt=""><h4 style="margin-top:16px">結果がありません</h4><p class="catalog-note">条件を変更して、もう一度検索してください。</p><button class="cds--btn cds--btn--tertiary cds--btn--sm" style="margin-top:16px">フィルターを解除</button></div>
+                <div class="catalog-demo-header"><h3>Empty state</h3><code class="catalog-class">.mds--empty-state / .mds--full-page-error</code></div>
+                <div style="text-align:center;padding:24px"><img class="catalog-icon--32" src="./svg/32/search.svg" alt=""><h4 style="margin-top:16px">結果がありません</h4><p class="catalog-note">条件を変更して、もう一度検索してください。</p><button class="mds--btn mds--btn--tertiary mds--btn--sm" style="margin-top:16px">フィルターを解除</button></div>
               </article>
             </div>
           </section>
@@ -300,20 +318,20 @@
             <div class="catalog-group-header"><h2>Feedback</h2><p>処理結果、状態、進行状況をユーザーへ伝える要素です。</p></div>
             <div class="catalog-grid">
               <article class="catalog-demo catalog-demo--wide" data-name="Notification 通知 inline toast actionable success error warning info">
-                <div class="catalog-demo-header"><h3>Notifications</h3><code class="catalog-class">.cds--inline-notification / .cds--toast-notification</code></div>
-                <div class="catalog-stack"><div class="cds--inline-notification cds--inline-notification--success" role="status"><div class="cds--inline-notification__details"><img class="cds--inline-notification__icon" src="./svg/20/checkmark--filled.svg" alt=""><div class="cds--inline-notification__text-wrapper"><p class="cds--inline-notification__title">保存しました</p><p class="cds--inline-notification__subtitle">変更内容が正常に保存されました。</p></div></div><button class="cds--inline-notification__close-button" type="button" data-dismiss aria-label="閉じる">×</button></div><div class="cds--inline-notification cds--inline-notification--error" role="alert"><div class="cds--inline-notification__details"><img class="cds--inline-notification__icon" src="./svg/20/error--filled.svg" alt=""><div class="cds--inline-notification__text-wrapper"><p class="cds--inline-notification__title">保存できませんでした</p><p class="cds--inline-notification__subtitle">接続を確認して、もう一度お試しください。</p></div></div></div><div class="cds--toast-notification cds--toast-notification--warning"><div class="cds--toast-notification__details"><img class="cds--toast-notification__icon" src="./svg/20/warning--filled.svg" alt=""><div><p class="cds--toast-notification__title">まもなくセッションが終了します</p><p class="cds--toast-notification__subtitle">作業内容を保存してください。</p></div></div></div></div>
+                <div class="catalog-demo-header"><h3>Notifications</h3><code class="catalog-class">.mds--inline-notification / .mds--toast-notification</code></div>
+                <div class="catalog-stack"><div class="mds--inline-notification mds--inline-notification--success" role="status"><div class="mds--inline-notification__details"><img class="mds--inline-notification__icon" src="./svg/20/checkmark--filled.svg" alt=""><div class="mds--inline-notification__text-wrapper"><p class="mds--inline-notification__title">保存しました</p><p class="mds--inline-notification__subtitle">変更内容が正常に保存されました。</p></div></div><button class="mds--inline-notification__close-button" type="button" data-dismiss aria-label="閉じる">×</button></div><div class="mds--inline-notification mds--inline-notification--error" role="alert"><div class="mds--inline-notification__details"><img class="mds--inline-notification__icon" src="./svg/20/error--filled.svg" alt=""><div class="mds--inline-notification__text-wrapper"><p class="mds--inline-notification__title">保存できませんでした</p><p class="mds--inline-notification__subtitle">接続を確認して、もう一度お試しください。</p></div></div></div><div class="mds--toast-notification mds--toast-notification--warning"><div class="mds--toast-notification__details"><img class="mds--toast-notification__icon" src="./svg/20/warning--filled.svg" alt=""><div><p class="mds--toast-notification__title">まもなくセッションが終了します</p><p class="mds--toast-notification__subtitle">作業内容を保存してください。</p></div></div></div></div>
               </article>
               <article class="catalog-demo" data-name="Loading ローディング inline loading spinner skeleton">
-                <div class="catalog-demo-header"><h3>Loading &amp; skeleton</h3><code class="catalog-class">.cds--loading / .cds--skeleton</code></div>
-                <div class="catalog-row"><div class="cds--loading cds--loading--small" aria-label="読み込み中"><svg class="cds--loading__svg" viewBox="0 0 100 100"><circle class="cds--loading__background" cx="50" cy="50" r="44"></circle><circle class="cds--loading__stroke" cx="50" cy="50" r="44"></circle></svg></div><div class="cds--inline-loading"><div class="cds--inline-loading__animation"><div class="cds--loading cds--loading--small"><svg class="cds--loading__svg" viewBox="0 0 100 100"><circle class="cds--loading__stroke" cx="50" cy="50" r="44"></circle></svg></div></div><p class="cds--inline-loading__text">データを保存中…</p></div></div><div class="catalog-stack" style="margin-top:24px"><div class="cds--skeleton__text" style="width:80%"></div><div class="cds--skeleton__text" style="width:55%"></div></div>
+                <div class="catalog-demo-header"><h3>Loading &amp; skeleton</h3><code class="catalog-class">.mds--loading / .mds--skeleton</code></div>
+                <div class="catalog-row"><div class="mds--loading mds--loading--small" aria-label="読み込み中"><svg class="mds--loading__svg" viewBox="0 0 100 100"><circle class="mds--loading__background" cx="50" cy="50" r="44"></circle><circle class="mds--loading__stroke" cx="50" cy="50" r="44"></circle></svg></div><div class="mds--inline-loading"><div class="mds--inline-loading__animation"><div class="mds--loading mds--loading--small"><svg class="mds--loading__svg" viewBox="0 0 100 100"><circle class="mds--loading__stroke" cx="50" cy="50" r="44"></circle></svg></div></div><p class="mds--inline-loading__text">データを保存中…</p></div></div><div class="catalog-stack" style="margin-top:24px"><div class="mds--skeleton__text" style="width:80%"></div><div class="mds--skeleton__text" style="width:55%"></div></div>
               </article>
               <article class="catalog-demo" data-name="Progress bar プログレスバー indeterminate error finished">
-                <div class="catalog-demo-header"><h3>Progress bar</h3><code class="catalog-class">.cds--progress-bar</code></div>
-                <div class="catalog-stack"><div class="cds--progress-bar"><div class="cds--progress-bar__label"><span>アップロード</span><span>68%</span></div><div class="cds--progress-bar__track"><div class="cds--progress-bar__bar" style="width:68%"></div></div><p class="cds--progress-bar__helper-text">3.4 MB / 5 MB</p></div><div class="cds--progress-bar cds--progress-bar--finished"><div class="cds--progress-bar__label"><span>完了</span><span>100%</span></div><div class="cds--progress-bar__track"><div class="cds--progress-bar__bar" style="width:100%"></div></div></div></div>
+                <div class="catalog-demo-header"><h3>Progress bar</h3><code class="catalog-class">.mds--progress-bar</code></div>
+                <div class="catalog-stack"><div class="mds--progress-bar"><div class="mds--progress-bar__label"><span>アップロード</span><span>68%</span></div><div class="mds--progress-bar__track"><div class="mds--progress-bar__bar" style="width:68%"></div></div><p class="mds--progress-bar__helper-text">3.4 MB / 5 MB</p></div><div class="mds--progress-bar mds--progress-bar--finished"><div class="mds--progress-bar__label"><span>完了</span><span>100%</span></div><div class="mds--progress-bar__track"><div class="mds--progress-bar__bar" style="width:100%"></div></div></div></div>
               </article>
               <article class="catalog-demo" data-name="Indicator インジケーター icon shape severity status">
-                <div class="catalog-demo-header"><h3>Icon &amp; shape indicators</h3><code class="catalog-class">.cds--icon-indicator / .cds--shape-indicator</code></div>
-                <div class="catalog-stack"><div class="catalog-row"><span class="cds--icon-indicator cds--icon-indicator--succeeded"><img src="./svg/16/checkmark--filled.svg" alt=""><span>Succeeded</span></span><span class="cds--icon-indicator cds--icon-indicator--failed"><img src="./svg/16/error--filled.svg" alt=""><span>Failed</span></span><span class="cds--icon-indicator cds--icon-indicator--in-progress"><img src="./svg/16/awake.svg" alt=""><span>In progress</span></span></div><div class="catalog-row"><span class="cds--shape-indicator cds--shape-indicator--critical"><img src="./svg/critical.svg" alt=""><span>Critical</span></span><span class="cds--shape-indicator cds--shape-indicator--low"><img src="./svg/low-severity.svg" alt=""><span>Low</span></span></div></div>
+                <div class="catalog-demo-header"><h3>Icon &amp; shape indicators</h3><code class="catalog-class">.mds--icon-indicator / .mds--shape-indicator</code></div>
+                <div class="catalog-stack"><div class="catalog-row"><span class="mds--icon-indicator mds--icon-indicator--succeeded"><img src="./svg/16/checkmark--filled.svg" alt=""><span>Succeeded</span></span><span class="mds--icon-indicator mds--icon-indicator--failed"><img src="./svg/16/error--filled.svg" alt=""><span>Failed</span></span><span class="mds--icon-indicator mds--icon-indicator--in-progress"><img src="./svg/16/awake.svg" alt=""><span>In progress</span></span></div><div class="catalog-row"><span class="mds--shape-indicator mds--shape-indicator--critical"><img src="./svg/critical.svg" alt=""><span>Critical</span></span><span class="mds--shape-indicator mds--shape-indicator--low"><img src="./svg/low-severity.svg" alt=""><span>Low</span></span></div></div>
               </article>
             </div>
           </section>
@@ -322,20 +340,20 @@
             <div class="catalog-group-header"><h2>Overlays</h2><p>モーダル、ダイアログ、パネル、ポップオーバーなど一時的な追加レイヤーです。</p></div>
             <div class="catalog-grid">
               <article class="catalog-demo catalog-demo--wide" data-name="Modal モーダル dialog ダイアログ tearsheet interstitial">
-                <div class="catalog-demo-header"><h3>Modal &amp; dialog</h3><code class="catalog-class">.cds--modal / .cds--dialog</code></div>
-                <div class="catalog-overlay-preview"><section class="catalog-dialog-card" role="dialog" aria-labelledby="dialog-title"><header><p class="catalog-kicker">確認</p><h3 id="dialog-title">変更を公開しますか？</h3></header><div class="catalog-dialog-body"><p style="font-size:14px;line-height:1.6;color:var(--cds-text-secondary)">公開すると、すべてのメンバーが最新のコンポーネントを利用できるようになります。</p></div><footer><button class="cds--btn cds--btn--secondary">キャンセル</button><button class="cds--btn cds--btn--primary">公開する</button></footer></section></div>
+                <div class="catalog-demo-header"><h3>Modal &amp; dialog</h3><code class="catalog-class">.mds--modal / .mds--dialog</code></div>
+                <div class="catalog-overlay-preview"><section class="catalog-dialog-card" role="dialog" aria-labelledby="dialog-title"><header><p class="catalog-kicker">確認</p><h3 id="dialog-title">変更を公開しますか？</h3></header><div class="catalog-dialog-body"><p style="font-size:14px;line-height:1.6;color:var(--mds-text-secondary)">公開すると、すべてのメンバーが最新のコンポーネントを利用できるようになります。</p></div><footer><button class="mds--btn mds--btn--secondary">キャンセル</button><button class="mds--btn mds--btn--primary">公開する</button></footer></section></div>
               </article>
               <article class="catalog-demo catalog-demo--wide" data-name="Side panel サイドパネル left right resizable">
-                <div class="catalog-demo-header"><h3>Side panel</h3><code class="catalog-class">.cds--side-panel</code></div>
-                <div class="catalog-panel-preview"><div class="catalog-panel-canvas">Main canvas</div><aside class="catalog-panel"><div class="catalog-demo-header"><h3>プロパティ</h3><button class="cds--btn cds--btn--ghost cds--btn--icon-only" aria-label="閉じる">×</button></div><div class="catalog-stack"><div class="cds--form-item cds--text-input-wrapper"><label class="cds--label" for="panel-name">名前</label><input class="cds--text-input" id="panel-name" value="Primary button"></div><div class="cds--form-item"><label class="cds--label" for="panel-state">状態</label><div class="cds--select-input__wrapper"><select class="cds--select-input" id="panel-state"><option>Default</option><option>Hover</option></select></div></div><button class="cds--btn cds--btn--primary">適用</button></div></aside></div>
+                <div class="catalog-demo-header"><h3>Side panel</h3><code class="catalog-class">.mds--side-panel</code></div>
+                <div class="catalog-panel-preview"><div class="catalog-panel-canvas">Main canvas</div><aside class="catalog-panel"><div class="catalog-demo-header"><h3>プロパティ</h3><button class="mds--btn mds--btn--ghost mds--btn--icon-only" aria-label="閉じる">×</button></div><div class="catalog-stack"><div class="mds--form-item mds--text-input-wrapper"><label class="mds--label" for="panel-name">名前</label><input class="mds--text-input" id="panel-name" value="Primary button"></div><div class="mds--form-item"><label class="mds--label" for="panel-state">状態</label><div class="mds--select-input__wrapper"><select class="mds--select-input" id="panel-state"><option>Default</option><option>Hover</option></select></div></div><button class="mds--btn mds--btn--primary">適用</button></div></aside></div>
               </article>
               <article class="catalog-demo" data-name="Popover ポップオーバー toggletip coachmark tooltip definition">
-                <div class="catalog-demo-header"><h3>Popover &amp; toggletip</h3><code class="catalog-class">.cds--popover / .cds--toggletip</code></div>
-                <div class="cds--popover cds--popover--open cds--popover--bottom"><div class="cds--popover-content" style="padding:16px;max-width:280px"><strong style="font-size:14px">補足情報</strong><p style="margin-top:8px;font-size:13px;line-height:1.5">この設定はワークスペース全体に適用されます。</p><div class="catalog-row" style="margin-top:12px"><a class="cds--link cds--link--sm" href="#overlays">詳しく見る</a></div></div><span class="cds--popover-caret"></span></div>
+                <div class="catalog-demo-header"><h3>Popover &amp; toggletip</h3><code class="catalog-class">.mds--popover / .mds--toggletip</code></div>
+                <div class="mds--popover mds--popover--open mds--popover--bottom"><div class="mds--popover-content" style="padding:16px;max-width:280px"><strong style="font-size:14px">補足情報</strong><p style="margin-top:8px;font-size:13px;line-height:1.5">この設定はワークスペース全体に適用されます。</p><div class="catalog-row" style="margin-top:12px"><a class="mds--link mds--link--sm" href="#overlays">詳しく見る</a></div></div><span class="mds--popover-caret"></span></div>
               </article>
               <article class="catalog-demo" data-name="Tooltip ツールチップ definition truncated text">
-                <div class="catalog-demo-header"><h3>Tooltip</h3><code class="catalog-class">.cds--tooltip</code></div>
-                <div class="catalog-stack"><button class="cds--btn cds--btn--ghost cds--btn--icon-only" aria-describedby="visible-tooltip"><img class="catalog-icon" src="./svg/16/information.svg" alt="情報"></button><div class="cds--tooltip" id="visible-tooltip" role="tooltip"><span class="cds--tooltip__caret"></span><div class="cds--tooltip__content">最終更新: 2026年11月26日</div></div></div>
+                <div class="catalog-demo-header"><h3>Tooltip</h3><code class="catalog-class">.mds--tooltip</code></div>
+                <div class="catalog-stack"><button class="mds--btn mds--btn--ghost mds--btn--icon-only" aria-label="情報" aria-describedby="visible-tooltip"><svg class="mds--btn__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.5 11 8.5 6.5 6.5 6.5 6.5 7.5 7.5 7.5 7.5 11 6 11 6 12 10 12 10 11z"/><path d="M8,3.5c-0.4,0-0.8,0.3-0.8,0.8S7.6,5,8,5c0.4,0,0.8-0.3,0.8-0.8S8.4,3.5,8,3.5z"/><path d="M8,15c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S11.9,15,8,15z M8,2C4.7,2,2,4.7,2,8s2.7,6,6,6s6-2.7,6-6S11.3,2,8,2z"/></svg></button><div class="mds--tooltip" id="visible-tooltip" role="tooltip"><span class="mds--tooltip__caret"></span><div class="mds--tooltip__content">最終更新: 2026年11月26日</div></div></div>
               </article>
             </div>
           </section>
@@ -344,28 +362,28 @@
             <div class="catalog-group-header"><h2>Specialized</h2><p>AI表示、編集、選択フローなど特定の業務体験向けコンポーネントです。</p></div>
             <div class="catalog-grid">
               <article class="catalog-demo" data-name="AI label AIラベル slug decorator">
-                <div class="catalog-demo-header"><h3>AI label &amp; decorator</h3><code class="catalog-class">.cds--ai-label / .cds--decorator</code></div>
-                <div class="catalog-row"><button class="cds--ai-label" type="button"><span class="cds--ai-label__label">AI</span></button><span class="cds--decorator"><span class="cds--decorator__label">Generated</span></span><span class="cds--slug"><span class="cds--slug__label">AI</span></span></div>
+                <div class="catalog-demo-header"><h3>AI label &amp; decorator</h3><code class="catalog-class">.mds--ai-label / .mds--decorator</code></div>
+                <div class="catalog-row"><button class="mds--ai-label" type="button"><span class="mds--ai-label__label">AI</span></button><span class="mds--decorator"><span class="mds--decorator__label">Generated</span></span><span class="mds--slug"><span class="mds--slug__label">AI</span></span></div>
               </article>
               <article class="catalog-demo" data-name="Edit in place インライン編集 inline edit toolbar">
-                <div class="catalog-demo-header"><h3>Edit in place</h3><code class="catalog-class">.cds--edit-in-place</code></div>
-                <div class="cds--edit-in-place cds--edit-in-place--focused"><label class="cds--edit-in-place__text-input-label" for="inline-edit">タイトル</label><input class="cds--edit-in-place__text-input cds--text-input" id="inline-edit" value="デザイン原則"><div class="cds--edit-in-place__toolbar"><button class="cds--btn cds--btn--ghost cds--btn--icon-only" aria-label="保存"><img class="catalog-icon" src="./svg/16/checkmark--filled.svg" alt=""></button></div></div>
+                <div class="catalog-demo-header"><h3>Edit in place</h3><code class="catalog-class">.mds--edit-in-place</code></div>
+                <div class="mds--edit-in-place mds--edit-in-place--focused"><label class="mds--edit-in-place__text-input-label" for="inline-edit">タイトル</label><input class="mds--edit-in-place__text-input mds--text-input" id="inline-edit" value="デザイン原則"><div class="mds--edit-in-place__toolbar"><button class="mds--btn mds--btn--ghost mds--btn--icon-only" aria-label="保存"><svg class="mds--btn__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8,1C4.1,1,1,4.1,1,8c0,3.9,3.1,7,7,7s7-3.1,7-7C15,4.1,11.9,1,8,1z M7,11L4.3,8.3l0.9-0.8L7,9.3l4-3.9l0.9,0.8L7,11z"/><path d="M7,11L4.3,8.3l0.9-0.8L7,9.3l4-3.9l0.9,0.8L7,11z" data-icon-path="inner-path" opacity="0"/></svg></button></div></div>
               </article>
               <article class="catalog-demo catalog-demo--wide" data-name="Add select 追加選択 list body row selected disabled">
-                <div class="catalog-demo-header"><h3>Add select</h3><code class="catalog-class">.cds--add-select</code></div>
-                <div class="cds--add-select"><div class="cds--add-select__header"><h4>メンバーを追加</h4></div><div class="cds--add-select__search"><div class="cds--search"><input class="cds--search-input" placeholder="名前で検索"></div></div><div class="cds--add-select__content"><div class="cds--add-select-list-body"><button class="cds--add-select-row cds--add-select-row--selected"><span class="cds--add-select-row__cell-wrapper"><span class="cds--add-select-row__title">山田 ゆき</span><span class="cds--add-select-row__subtitle">Designer</span></span></button><button class="cds--add-select-row"><span class="cds--add-select-row__cell-wrapper"><span class="cds--add-select-row__title">佐藤 健</span><span class="cds--add-select-row__subtitle">Engineer</span></span></button><button class="cds--add-select-row cds--add-select-row--disabled" disabled><span class="cds--add-select-row__cell-wrapper"><span class="cds--add-select-row__title">田中 葵</span><span class="cds--add-select-row__subtitle">Already added</span></span></button></div></div></div>
+                <div class="catalog-demo-header"><h3>Add select</h3><code class="catalog-class">.mds--add-select</code></div>
+                <div class="mds--add-select"><div class="mds--add-select__header"><h4>メンバーを追加</h4></div><div class="mds--add-select__search"><div class="mds--search"><input class="mds--search-input" placeholder="名前で検索"></div></div><div class="mds--add-select__content"><div class="mds--add-select-list-body"><button class="mds--add-select-row mds--add-select-row--selected"><span class="mds--add-select-row__cell-wrapper"><span class="mds--add-select-row__title">山田 ゆき</span><span class="mds--add-select-row__subtitle">Designer</span></span></button><button class="mds--add-select-row"><span class="mds--add-select-row__cell-wrapper"><span class="mds--add-select-row__title">佐藤 健</span><span class="mds--add-select-row__subtitle">Engineer</span></span></button><button class="mds--add-select-row mds--add-select-row--disabled" disabled><span class="mds--add-select-row__cell-wrapper"><span class="mds--add-select-row__title">田中 葵</span><span class="mds--add-select-row__subtitle">Already added</span></span></button></div></div></div>
               </article>
               <article class="catalog-demo" data-name="Options tile オプションタイル action set">
-                <div class="catalog-demo-header"><h3>Options tile &amp; action set</h3><code class="catalog-class">.cds--options-tile / .cds--action-set</code></div>
-                <div class="catalog-surface"><h4>公開範囲</h4><p class="catalog-note">このプロジェクトを閲覧できるユーザーを選択します。</p><div class="catalog-stack" style="margin-top:16px"><label><input type="radio" name="scope" checked> ワークスペース全体</label><label><input type="radio" name="scope"> 招待したメンバーのみ</label></div><div class="cds--action-set cds--action-set--row-double" style="margin-top:24px"><button class="cds--btn cds--btn--secondary">キャンセル</button><button class="cds--btn cds--btn--primary">保存</button></div></div>
+                <div class="catalog-demo-header"><h3>Options tile &amp; action set</h3><code class="catalog-class">.mds--options-tile / .mds--action-set</code></div>
+                <div class="catalog-surface"><h4>公開範囲</h4><p class="catalog-note">このプロジェクトを閲覧できるユーザーを選択します。</p><div class="catalog-stack" style="margin-top:16px"><label><input type="radio" name="scope" checked> ワークスペース全体</label><label><input type="radio" name="scope"> 招待したメンバーのみ</label></div><div class="mds--action-set mds--action-set--row-double" style="margin-top:24px"><button class="mds--btn mds--btn--secondary">キャンセル</button><button class="mds--btn mds--btn--primary">保存</button></div></div>
               </article>
               <article class="catalog-demo" data-name="Resizer リサイザー scroll gradient">
-                <div class="catalog-demo-header"><h3>Resizer &amp; scroll gradient</h3><code class="catalog-class">.cds--resizer / .cds--scroll-gradient</code></div>
-                <div style="display:grid;grid-template-columns:1fr 8px 1fr;height:120px;border:1px solid var(--cds-border-subtle-01)"><div style="padding:16px">Panel A</div><div class="cds--resizer cds--resizer--vertical" role="separator" aria-orientation="vertical"></div><div style="padding:16px">Panel B</div></div>
+                <div class="catalog-demo-header"><h3>Resizer &amp; scroll gradient</h3><code class="catalog-class">.mds--resizer / .mds--scroll-gradient</code></div>
+                <div style="display:grid;grid-template-columns:1fr 8px 1fr;height:120px;border:1px solid var(--mds-border-subtle-01)"><div style="padding:16px">Panel A</div><div class="mds--resizer mds--resizer--vertical" role="separator" aria-orientation="vertical"></div><div style="padding:16px">Panel B</div></div>
               </article>
               <article class="catalog-demo" data-name="Contained list リスト item action icon disclosed">
-                <div class="catalog-demo-header"><h3>Contained list</h3><code class="catalog-class">.cds--contained-list</code></div>
-                <div class="cds--contained-list"><div class="cds--contained-list__header">最近使った項目</div><ul><li class="cds--contained-list-item cds--contained-list-item--clickable"><button class="cds--contained-list-item__content">Button</button></li><li class="cds--contained-list-item cds--contained-list-item--clickable"><button class="cds--contained-list-item__content">Data table</button></li><li class="cds--contained-list-item cds--contained-list-item--clickable"><button class="cds--contained-list-item__content">Notification</button></li></ul></div>
+                <div class="catalog-demo-header"><h3>Contained list</h3><code class="catalog-class">.mds--contained-list</code></div>
+                <div class="mds--contained-list"><div class="mds--contained-list__header">最近使った項目</div><ul><li class="mds--contained-list-item mds--contained-list-item--clickable"><button class="mds--contained-list-item__content">Button</button></li><li class="mds--contained-list-item mds--contained-list-item--clickable"><button class="mds--contained-list-item__content">Data table</button></li><li class="mds--contained-list-item mds--contained-list-item--clickable"><button class="mds--contained-list-item__content">Notification</button></li></ul></div>
               </article>
             </div>
           </section>
@@ -420,10 +438,10 @@
       search.addEventListener('input', filterCatalog);
       filterCatalog();
 
-      document.querySelectorAll('[data-accordion] .cds--accordion__heading').forEach((button) => {
+      document.querySelectorAll('[data-accordion] .mds--accordion__heading').forEach((button) => {
         button.addEventListener('click', () => {
-          const item = button.closest('.cds--accordion__item');
-          const active = item.classList.toggle('cds--accordion__item--active');
+          const item = button.closest('.mds--accordion__item');
+          const active = item.classList.toggle('mds--accordion__item--active');
           button.setAttribute('aria-expanded', String(active));
         });
       });
