@@ -22,6 +22,9 @@ My Design System
 
 ## 文字サイズ
 
+`:root` の `--font-family` に IBM Plex Sans を定義しています。書体を明示する場合は
+`mds--font-sans` を使います。IBM Plex Sans が利用できない文字は、端末のサンセリフ書体で表示します。
+
 `:root` に共通の文字サイズを定義しています。
 
 - `--font-size-01`（12px）はラベルや補助表示に使います。
@@ -29,3 +32,6 @@ My Design System
 
 文字の太さは `--font-weight-01`（300）、`--font-weight-02`（400）、
 `--font-weight-03`（600）で指定します。本文の標準は400です。
+
+行高は `--line-height-01`（1.25、コンパクトなUI）、`--line-height-02`（1.4、標準）、
+`--line-height-03`（1.5、複数行の本文）の3段階です。
