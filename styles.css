@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/* Modified from Carbon Design System: removed web fonts, unified font families, converted rem lengths to pixels, and replaced the built-in themes. */
+
+/* Modified from Carbon Design System: unified font families, converted rem lengths to pixels, and replaced the built-in themes. */
 html,
 body,
 div,
@@ -7,12 +8,6 @@ span,
 applet,
 object,
 iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 blockquote,
 pre,
@@ -89,6 +84,14 @@ video {
   vertical-align: baseline;
 }
 
+:where(h1, h2, h3, h4, h5, h6) {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-feature-settings: "liga" 1;
+  vertical-align: baseline;
+}
+
 sup {
   vertical-align: super;
 }
@@ -144,12 +147,11 @@ label {
 
   --font-size-01: 12px;
   --font-size-02: 14px;
-  font-size: var(--font-size-02);
 
   --font-weight-01: 300;
   --font-weight-02: 400;
   --font-weight-03: 600;
-  --font-family: "IBM Plex Sans", system-ui, sans-serif;
+  --font-family: "IBM Plex Sans JP", "IBM Plex Sans", system-ui, sans-serif;
   font-family: var(--font-family);
 
   /* Typography shared across components and themes. */
