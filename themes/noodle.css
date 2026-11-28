@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Noodle palette reference: https://noodle-map.marulabs.dev/search */
+:root,
+:root[data-theme="noodle"] {
+  --kt-background: #f4ede0;
+  --kt-surface: #faf6ec;
+  --kt-surface-active: #ebe1cf;
+  --kt-ink: #1a1614;
+  --kt-ink-soft: #3a322c;
+  --kt-ink-muted: #6b5e52;
+  --kt-accent: #b54a3c;
+  --kt-accent-strong: #8c2e21;
+  --kt-on-accent: #ffffff;
+  --kt-border: rgba(26, 22, 20, 0.12);
+  --kt-border-strong: rgba(26, 22, 20, 0.22);
+  --kt-error: #a42534;
+  --kt-info: #24597a;
+  --kt-success: #28633b;
+  --kt-warning: #795300;
+  --mds-color-scheme: light;
+  --mds-button-primary: #b94026;
+  --mds-button-primary-hover: #9d321d;
+  --mds-button-primary-active: #7d2819;
+  --kt-button-secondary-surface: #fcece4;
+  --kt-button-secondary-surface-hover: #fbe9df;
+  --kt-button-secondary-surface-active: #fae6dc;
+  --mds-avatar-order-1: #0072c3;
+  --mds-avatar-order-2: #6f6f6f;
+  --mds-avatar-order-3: #198038;
+  --mds-avatar-order-4: #d02670;
+  --mds-avatar-order-5: #8a3ffc;
+  --mds-avatar-order-6: #007d79;
+  --mds-avatar-order-7: #003a6d;
+  --mds-avatar-order-8: #393939;
+  --mds-avatar-order-9: #044317;
+  --mds-avatar-order-10: #740937;
+  --mds-avatar-order-11: #491d8b;
+  --mds-avatar-order-12: #004144;
+}

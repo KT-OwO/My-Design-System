@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+:root[data-theme="high-contrast"] {
+  --kt-background: #ffffff;
+  --kt-surface: #ffffff;
+  --kt-surface-active: #e6e6e6;
+  --kt-ink: #000000;
+  --kt-ink-soft: #202020;
+  --kt-ink-muted: #373737;
+  --kt-accent: #14145c;
+  --kt-accent-strong: #000040;
+  --kt-on-accent: #ffffff;
+  --kt-border: #595959;
+  --kt-border-strong: #000000;
+  --kt-error: #a42534;
+  --kt-info: #24597a;
+  --kt-success: #28633b;
+  --kt-warning: #795300;
+  --mds-color-scheme: light;
+  --mds-button-primary: #14145c;
+  --mds-button-primary-hover: #000040;
+  --mds-button-primary-active: #000024;
+  --kt-button-secondary-surface: #f1f1fc;
+  --kt-button-secondary-surface-hover: #e9e9fa;
+  --kt-button-secondary-surface-active: #e1e1f7;
+  --mds-avatar-order-1: #0072c3;
+  --mds-avatar-order-2: #6f6f6f;
+  --mds-avatar-order-3: #198038;
+  --mds-avatar-order-4: #d02670;
+  --mds-avatar-order-5: #8a3ffc;
+  --mds-avatar-order-6: #007d79;
+  --mds-avatar-order-7: #003a6d;
+  --mds-avatar-order-8: #393939;
+  --mds-avatar-order-9: #044317;
+  --mds-avatar-order-10: #740937;
+  --mds-avatar-order-11: #491d8b;
+  --mds-avatar-order-12: #004144;
+}

@@ -3,7 +3,15 @@ My Design System
 
 ## テーマ
 
-`styles.css` を読み込み、`<html>` の `data-theme` で切り替えます。
+共通スタイルの `styles.css` と、使用するテーマの CSS を読み込みます。テーマを動的に切り替える場合は、すべてのテーマ CSS を読み込んで `<html>` の `data-theme` を変更します。
+
+```html
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./themes/noodle.css">
+<link rel="stylesheet" href="./themes/dark.css">
+<link rel="stylesheet" href="./themes/forest.css">
+<link rel="stylesheet" href="./themes/high-contrast.css">
+```
 
 | `data-theme` | 配色 |
 | --- | --- |
