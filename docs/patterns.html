@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja" data-theme="noodle">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>設定フォーム — My Design System</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../themes/noodle.css">
+  <link rel="stylesheet" href="../themes/dark.css">
+  <link rel="stylesheet" href="../themes/forest.css">
+  <link rel="stylesheet" href="../themes/high-contrast.css">
+  <script src="../runtime/browser.js" defer></script>
+  <style>
+    main { max-width: 40rem; margin: auto; padding: clamp(1rem, 4vw, 3rem); }
+    main > *, form > *, dialog > * { margin-block-end: 1rem; }
+    dialog { max-width: min(26rem, 90vw); padding: 1.5rem; }
+  </style>
+</head>
+<body>
+  <main class="mds--type-body">
+    <h1 class="mds--type-heading-01">通知設定</h1>
+    <p>通知を受け取るメールアドレスを設定します。</p>
+    <form id="settings">
+      <div class="mds--form-item mds--text-input-wrapper">
+        <label class="mds--label" for="address">メールアドレス</label>
+        <div class="mds--text-input__field-wrapper">
+          <input class="mds--text-input" id="address" type="email" name="email" autocomplete="email" required>
+        </div>
+      </div>
+      <button class="mds--btn mds--btn--primary" id="confirm" type="submit">確認する</button>
+    </form>
+    <p id="result" role="status"></p>
+    <dialog id="save-dialog" aria-labelledby="save-title">
+      <h2 class="mds--type-heading-02" id="save-title">設定を保存しますか？</h2>
+      <form method="dialog">
+        <button class="mds--btn mds--btn--secondary" value="cancel" autofocus>戻る</button>
+        <button class="mds--btn mds--btn--primary" value="save">保存する</button>
+      </form>
+    </dialog>
+    <p><a class="mds--link" href="../index.html">コンポーネント一覧</a></p>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.querySelector('#settings');
+      const trigger = document.querySelector('#confirm');
+      const dialog = document.querySelector('#save-dialog');
+      const controller = MyDesignSystem.modal(trigger, dialog, {
+        event: null,
+        onClose(value) {
+          document.querySelector('#result').textContent = value === 'save' ? '設定を保存しました（デモ）。' : '';
+        },
+      });
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        controller.open();
+      });
+    });
+  </script>
+</body>
+</html>

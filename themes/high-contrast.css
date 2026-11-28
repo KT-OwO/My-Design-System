@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Generated from tokens/source.json. */
 :root[data-theme="high-contrast"] {
   --kt-background: #ffffff;
   --kt-surface: #ffffff;

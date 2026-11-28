@@ -1,0 +1,14 @@
+My Design System
+Copyright (c) 2026 KT-OwO
+
+Includes CSS adapted from Carbon Design System and SVG assets from its
+icon library (IBM and Carbon contributors).
+Upstream: https://github.com/carbon-design-system/carbon
+License for Carbon material: Apache License, Version 2.0 (LICENSE-APACHE).
+Local import commit: 574d5526a3a3b987283a0a29209583c3d7afd617.
+The upstream release or commit was not recorded in that import.
+
+Local CSS modifications include class prefixes, length units, typography,
+theme mappings and component styling.
+
+All rights reserved for the original project code.

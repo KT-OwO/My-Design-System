@@ -55,14 +55,7 @@
   filterCatalog();
 
   function toggleDisclosure(button, content, open = false, onChange) {
-    function update(expanded) {
-      content.hidden = !expanded;
-      button.setAttribute('aria-expanded', String(expanded));
-      onChange?.(expanded);
-    }
-    update(open);
-    button.addEventListener('click', () => update(content.hidden));
-    return update;
+    return MyDesignSystem.disclosure(button, content, { expanded: open, onChange }).setExpanded;
   }
 
   document.querySelectorAll('.catalog-demo a[href^="#"]').forEach((link) => {
@@ -155,40 +148,30 @@
     update();
   });
 
-  document.querySelectorAll('.mds--list-box:has(.mds--list-box__field)').forEach((component) => {
+  document.querySelectorAll('.mds--list-box:has(.mds--list-box__field)').forEach((component, index) => {
     const button = component.querySelector('.mds--list-box__field');
     const label = button.querySelector('.mds--list-box__label');
     const menu = document.createElement('div');
     menu.className = 'mds--list-box__menu';
-    menu.id = 'demo-dropdown-options';
-    button.setAttribute('aria-controls', menu.id);
+    menu.id = 'demo-dropdown-options-' + index;
+    menu.setAttribute('role', 'listbox');
+    menu.setAttribute('aria-label', '項目の選択');
     component.append(menu);
-    const update = toggleDisclosure(button, menu, false, (expanded) => {
-      component.classList.toggle('mds--list-box--expanded', expanded);
-    });
     [label.textContent, '別の項目', 'その他の項目'].forEach((value) => {
       const item = document.createElement('div');
       item.className = 'mds--list-box__menu-item';
+      item.setAttribute('role', 'presentation');
       const option = document.createElement('button');
       option.type = 'button';
       option.className = 'mds--list-box__menu-item__option';
       option.textContent = value;
-      option.addEventListener('click', () => {
-        label.textContent = value;
-        update(false);
-        button.focus({ preventScroll: true });
-      });
+      option.setAttribute('role', 'option');
       item.append(option);
       menu.append(item);
     });
-    component.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && !menu.hidden) {
-        update(false);
-        button.focus({ preventScroll: true });
-      }
-    });
-    document.addEventListener('click', (event) => {
-      if (!component.contains(event.target)) update(false);
+    MyDesignSystem.dropdown(button, menu, {
+      onSelect(option) { label.textContent = option.textContent; },
+      onOpenChange(expanded) { component.classList.toggle('mds--list-box--expanded', expanded); },
     });
   });
 
@@ -214,50 +197,30 @@
   document.querySelectorAll('[role="tablist"]').forEach((list, index) => {
     const tabs = [...list.querySelectorAll('[role="tab"]')];
     const article = list.closest('.catalog-demo');
-    const panel = article.querySelector('.catalog-surface') ?? document.createElement('div');
-    if (!panel.parentElement) {
-      panel.className = 'catalog-surface';
-      list.after(panel);
-    }
-    panel.id = 'demo-tab-panel-' + index;
-    panel.setAttribute('role', 'tabpanel');
-    panel.tabIndex = 0;
+    article.querySelector('.catalog-surface')?.remove();
     const descriptions = index === 0
       ? ['コンポーネントの概要を表示します。', 'コンポーネントの仕様を表示します。', 'コンポーネントの変更履歴を表示します。']
       : ['日単位で表示します。', '週単位で表示します。', '月単位で表示します。'];
-
-    function select(active) {
+    tabs.forEach((tab, tabIndex) => {
+      const panel = document.createElement('div');
+      panel.id = 'demo-tab-panel-' + index + '-' + tabIndex;
+      panel.className = 'catalog-surface';
+      panel.setAttribute('role', 'tabpanel');
+      panel.tabIndex = 0;
+      panel.textContent = descriptions[tabIndex];
+      article.append(panel);
+      tab.id = panel.id + '-tab';
+      tab.setAttribute('aria-controls', panel.id);
+    });
+    MyDesignSystem.tabs(list, { onSelect(active) {
       tabs.forEach((tab, tabIndex) => {
         const selected = tabIndex === active;
-        tab.setAttribute('aria-selected', String(selected));
-        tab.tabIndex = selected ? 0 : -1;
         tab.closest('.mds--tabs__nav-item')?.classList.toggle('mds--tabs__nav-item--selected', selected);
         if (tab.classList.contains('mds--content-switcher-btn')) {
           tab.classList.toggle('mds--content-switcher--selected', selected);
         }
       });
-      panel.textContent = descriptions[active];
-      panel.setAttribute('aria-labelledby', tabs[active].id);
-    }
-
-    tabs.forEach((tab, tabIndex) => {
-      tab.id = panel.id + '-tab-' + tabIndex;
-      tab.setAttribute('aria-controls', panel.id);
-      tab.addEventListener('click', () => select(tabIndex));
-      tab.addEventListener('keydown', (event) => {
-        const targets = {
-          ArrowLeft: (tabIndex - 1 + tabs.length) % tabs.length,
-          ArrowRight: (tabIndex + 1) % tabs.length,
-          Home: 0,
-          End: tabs.length - 1,
-        };
-        if (!Object.hasOwn(targets, event.key)) return;
-        event.preventDefault();
-        select(targets[event.key]);
-        tabs[targets[event.key]].focus({ preventScroll: true });
-      });
-    });
-    select(Math.max(0, tabs.findIndex((tab) => tab.getAttribute('aria-selected') === 'true')));
+    } });
   });
 
   document.querySelectorAll('.mds--pagination').forEach((component) => {
@@ -334,15 +297,10 @@
 
   const dialog = document.querySelector('dialog.catalog-dialog-card');
   const openDialog = document.querySelector('[data-open-dialog]');
-  openDialog.addEventListener('click', () => {
-    dialog.returnValue = '';
-    dialog.showModal();
-  });
-  dialog.addEventListener('close', () => {
-    openDialog.focus({ preventScroll: true });
+  MyDesignSystem.modal(openDialog, dialog, { onClose(value) {
     dialog.parentElement.querySelector('[role="status"]').textContent =
-      dialog.returnValue === 'publish' ? '公開を確認しました（デモ）' : '';
-  });
+      value === 'publish' ? '公開を確認しました（デモ）' : '';
+  } });
 
   const panel = document.querySelector('.catalog-panel');
   const openPanel = document.querySelector('[data-open-panel]');

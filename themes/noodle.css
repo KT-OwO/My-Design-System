@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-/* Noodle palette reference: https://noodle-map.marulabs.dev/search */
+/* Generated from tokens/source.json. */
+/* Palette reference: https://noodle-map.marulabs.dev/search */
 :root,
 :root[data-theme="noodle"] {
   --kt-background: #f4ede0;

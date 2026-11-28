@@ -116,15 +116,15 @@ label {
   font-size: var(--font-size-01);
 }
 
+/* BEGIN GENERATED BASE TOKENS */
 :root {
   color-scheme: var(--mds-color-scheme, light);
+  font-family: var(--font-family);
   --radius-xs: 2px;
   --radius-sm: 4px;
-  
   --card-title-lines: 2;
   --card-desc-lines: 3;
   --card-label-lines: 1;
-
   --spacing-01: 2px;
   --spacing-02: 4px;
   --spacing-03: 8px;
@@ -137,31 +137,27 @@ label {
   --spacing-10: 64px;
   --spacing-11: 80px;
   --spacing-12: 96px;
-
   --size-01: 24px;
   --size-02: 32px;
   --size-03: 40px;
   --size-04: 48px;
   --size-05: 64px;
   --size-06: 80px;
-
   --font-size-01: 12px;
   --font-size-02: 14px;
-
   --font-weight-01: 300;
   --font-weight-02: 400;
   --font-weight-03: 600;
   --font-family: "IBM Plex Sans JP", "IBM Plex Sans", system-ui, sans-serif;
-  font-family: var(--font-family);
-
-  /* Typography shared across components and themes. */
   --line-height-01: 1.25;
   --line-height-02: 1.4;
   --line-height-03: 1.5;
   --letter-spacing-01: 0;
   --letter-spacing-02: 0.16px;
   --letter-spacing-03: 0.32px;
+  --font-family-mono: "IBM Plex Mono", ui-monospace, monospace;
 }
+/* END GENERATED BASE TOKENS */
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -34283,7 +34279,7 @@ a.mds--header__menu-item.mds--header__menu-item--current:focus {
   background-color: var(--mds-avatar-order-12);
 }
 
-/* Shared semantic token mapping. Values are supplied by themes/*.css. */
+/* BEGIN GENERATED SEMANTIC TOKENS */
 :root {
   --mds-background: var(--kt-background);
   --mds-background-brand: var(--kt-accent);
@@ -34359,7 +34355,18 @@ a.mds--header__menu-item.mds--header__menu-item--current:focus {
   --mds-notification-background-info: var(--kt-surface);
   --mds-notification-background-success: var(--kt-surface);
   --mds-notification-background-warning: var(--kt-surface);
+  --font-weight-normal: var(--font-weight-02);
+  --mds-type-display: clamp(2rem, 4vw + 1rem, 3.5rem);
+  --mds-type-heading-01: 2rem;
+  --mds-type-heading-02: 1.5rem;
+  --mds-type-heading-03: 1.25rem;
+  --mds-type-heading-04: 1.125rem;
+  --mds-type-heading-05: 1rem;
+  --mds-type-heading-06: 0.875rem;
+  --mds-type-body: var(--font-size-02);
+  --mds-type-label: var(--font-size-01);
 }
+/* END GENERATED SEMANTIC TOKENS */
 
 
 
@@ -34411,4 +34418,39 @@ a.mds--header__menu-item.mds--header__menu-item--current:focus {
 
 .mds--color-primary {
   color: var(--mds-button-primary);
+}
+
+.mds--type-display,
+.mds--type-heading-01,
+.mds--type-heading-02,
+.mds--type-heading-03,
+.mds--type-heading-04,
+.mds--type-heading-05,
+.mds--type-heading-06 {
+  font-weight: var(--font-weight-03);
+  line-height: var(--line-height-01);
+}
+
+.mds--type-display { font-size: var(--mds-type-display); }
+.mds--type-heading-01 { font-size: var(--mds-type-heading-01); }
+.mds--type-heading-02 { font-size: var(--mds-type-heading-02); }
+.mds--type-heading-03 { font-size: var(--mds-type-heading-03); }
+.mds--type-heading-04 { font-size: var(--mds-type-heading-04); }
+.mds--type-heading-05 { font-size: var(--mds-type-heading-05); }
+.mds--type-heading-06 { font-size: var(--mds-type-heading-06); }
+
+.mds--type-body {
+  font-size: var(--mds-type-body);
+  line-height: var(--line-height-03);
+}
+
+.mds--type-label {
+  font-size: var(--mds-type-label);
+  line-height: var(--line-height-02);
+}
+
+.mds--type-code {
+  font-family: var(--font-family-mono);
+  font-size: var(--mds-type-body);
+  line-height: var(--line-height-03);
 }

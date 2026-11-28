@@ -1,0 +1,19 @@
+{
+  "name": "my-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Framework-independent UI styles, themes and behaviors",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check components.js && node scripts/build.mjs --check && node --test tests/unit/*.test.mjs",
+    "test": "npm run check && npm run test:browser",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "axe-core": "4.11.1",
+    "postcss": "8.5.16"
+  }
+}
